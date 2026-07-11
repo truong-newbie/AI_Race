@@ -1,0 +1,20 @@
+# NER Fine-tuning Requirements
+# Install: pip install -r requirements_ner.txt
+
+# Core ML
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.14.0
+accelerate>=0.20.0
+
+# Utilities
+numpy>=1.24.0
+tqdm>=4.65.0
+pyyaml>=6.0
+pytest>=7.4.0
+
+# For mixed precision training (optional but recommended)
+scipy>=1.10.0
+
+# For visualization in notebook (optional)
+matplotlib>=3.7.0

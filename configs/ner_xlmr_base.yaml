@@ -1,0 +1,62 @@
+# NER Training Configuration for XLM-RoBERTa-base
+
+# Model
+model_name: "xlm-roberta-base"  # First model to try
+# model_name: "vinai/bertbase-vi"  # PhoBERT - try after XLM-R works
+
+# Data
+train_path: "data/processed/train.jsonl"
+dev_path: "data/processed/dev.jsonl"
+test_path: "data/processed/internal_test.jsonl"
+
+# Tokenization
+max_length: 256
+padding: "max_length"
+
+# Training
+train_batch_size: 16
+eval_batch_size: 16
+learning_rate: 2e-5
+weight_decay: 0.01
+epochs: 10
+warmup_ratio: 0.1
+gradient_accumulation_steps: 1
+
+# Mixed precision
+fp16: true  # Use FP16 if GPU supports it
+bf16: false  # Use BF16 (better for A100)
+
+# Optimizer
+optimizer: "adamw"
+adam_epsilon: 1e-8
+
+# Scheduler
+scheduler: "linear"
+
+# Early stopping
+early_stopping_patience: 3
+early_stopping_metric: "entity_f1"
+early_stopping_mode: "max"
+
+# Random seed
+seed: 42
+
+# Output
+output_dir: "outputs/ner_xlmr_base"
+log_dir: "outputs/logs"
+save_total_limit: 3  # Keep only last 3 checkpoints
+
+# Logging
+logging_steps: 10
+save_steps: 100
+eval_steps: 100
+
+# Metrics
+compute_metrics: true
+entity_metrics:
+  - precision
+  - recall
+  - f1
+  - per_class_f1
+  - boundary_error
+  - wrong_type_error
