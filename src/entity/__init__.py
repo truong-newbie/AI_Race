@@ -49,6 +49,35 @@ from src.entity.metrics import (
     print_metrics_report,
 )
 
+# Ensemble modules
+from src.entity.confidence import (
+    ConfidenceConfig,
+    EntitySource,
+    compute_entity_confidence,
+    get_source_base_confidence,
+    get_section_type_weight,
+    should_never_merge,
+)
+
+from src.entity.conflict_logger import (
+    ConflictLogger,
+    ConflictType,
+    ConflictRecord,
+    ConflictReport,
+)
+
+from src.entity.resolver import (
+    EntityResolver,
+    ResolvedEntity,
+)
+
+from src.entity.ensemble import (
+    EntityEnsemble,
+    SimpleEnsemble,
+    create_baseline_extractor,
+    create_ensemble_with_baseline,
+)
+
 __all__ = [
     # Labels
     "NER_ENTITY_TYPES",
@@ -83,4 +112,12 @@ __all__ = [
     "analyze_errors",
     "detailed_error_analysis",
     "print_metrics_report",
+    # Ensemble
+    "ConfidenceConfig",
+    "EntitySource",
+    "ConflictLogger",
+    "ConflictType",
+    "EntityResolver",
+    "EntityEnsemble",
+    "SimpleEnsemble",
 ]
