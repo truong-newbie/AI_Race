@@ -1,0 +1,3 @@
+sample_id,text,entity_text,entity_type,entity_start,entity_end,expected_assertions,predicted_assertions,is_neg_expected,is_neg_predicted,is_hist_expected,is_hist_predicted,is_fam_expected,is_fam_predicted
+val_0085,Viêm phổi cộng đồng mắc phải.,viêm phổi cộng đồng,,,,,,,,,,,
+val_0088,Đau đầu vùng trán right.,đau đầu,,,,,,,,,,,
