@@ -1,3 +1,293 @@
-sample_id,text,entity_text,entity_type,entity_start,entity_end,expected_assertions,predicted_assertions,is_neg_expected,is_neg_predicted,is_hist_expected,is_hist_predicted,is_fam_expected,is_fam_predicted
-val_0085,Viêm phổi cộng đồng mắc phải.,viêm phổi cộng đồng,,,,,,,,,,,
-val_0088,Đau đầu vùng trán right.,đau đầu,,,,,,,,,,,
+source,error_type,entity_text,entity_type,start,end,gold_assertions,pred_assertions,gold_candidates,pred_candidates,detail
+e2e:fam_00104,missed_entity,hen suyễn,CHẨN_ĐOÁN,14,23,isFamily,,J45.9,,gold entity not in predictions
+e2e:fam_00104,false_positive,hen suyễn,TRIỆU_CHỨNG,14,23,,isFamily,,,prediction with no gold match
+e2e:fam_00104,wrong_type,hen suyễn,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,14,23,isFamily,isFamily,,,type mismatch at same span
+e2e:symp_00039,missed_entity,buồn nôn,TRIỆU_CHỨNG,13,21,,,,,gold entity not in predictions
+e2e:symp_00040,missed_entity,nghẹt mũi,TRIỆU_CHỨNG,6,15,,,,,gold entity not in predictions
+e2e:drug_00045,missed_entity,prednisolone,THUỐC,7,19,,,8640,,gold entity not in predictions
+e2e:drug_00045,false_positive,Kê đơn prednisolon,THUỐC,0,18,,,,8640|314076|161|197361|7646,prediction with no gold match
+e2e:lab_00074,missed_entity,Hematocrit: 32%,KẾT_QUẢ_XÉT_NGHIỆM,3,18,,,,,gold entity not in predictions
+e2e:diag_00005,missed_entity,nhiễm trùng tiết niệu,CHẨN_ĐOÁN,16,37,,,N39.0,,gold entity not in predictions
+e2e:diag_00005,false_positive,nhiễm trùng,CHẨN_ĐOÁN,16,27,,,,J06.9|N39.0|A09|B34.9|E05.90,prediction with no gold match
+e2e:diag_00006,missed_entity,viêm phổi cộng đồng,CHẨN_ĐOÁN,10,29,,,J18.9,,gold entity not in predictions
+e2e:diag_00006,false_positive,viêm phổi,TRIỆU_CHỨNG,10,19,,,,,prediction with no gold match
+e2e:diag_00009,missed_entity,viêm mũi dị ứng,CHẨN_ĐOÁN,3,18,,,J30.4,,gold entity not in predictions
+e2e:diag_00009,false_positive,dị ứng,TRIỆU_CHỨNG,12,18,,,,,prediction with no gold match
+e2e:diag_00009,false_positive,viêm mũi,TRIỆU_CHỨNG,3,11,,,,,prediction with no gold match
+e2e:diag_00015,missed_entity,viêm gan B,CHẨN_ĐOÁN,12,22,,,B18.1,,gold entity not in predictions
+e2e:diag_00015,false_positive,viêm gan,TRIỆU_CHỨNG,12,20,,,,,prediction with no gold match
+e2e:diag_00018,missed_entity,đái tháo đường type 2,CHẨN_ĐOÁN,25,46,,,E11.9,,gold entity not in predictions
+e2e:diag_00018,false_positive,đái tháo đường,CHẨN_ĐOÁN,25,39,,,,E11.9|A09|J06.9|I21.9|G40.909,prediction with no gold match
+e2e:neg_00084,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,9,22,isNegated,,,,gold entity not in predictions
+e2e:neg_00084,false_positive,tăng huyết áp,TRIỆU_CHỨNG,9,22,,isNegated,,,prediction with no gold match
+e2e:neg_00084,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,9,22,isNegated,isNegated,,,type mismatch at same span
+e2e:neg_00088,missed_entity,trào ngược dạ dày thực quản,CHẨN_ĐOÁN,9,36,isNegated,,,,gold entity not in predictions
+e2e:neg_00088,false_positive,trào ngược dạ dày,TRIỆU_CHỨNG,9,26,,isNegated,,,prediction with no gold match
+e2e:hist_00091,missed_entity,đột quỵ,CHẨN_ĐOÁN,11,18,isHistorical,,I64,,gold entity not in predictions
+e2e:hist_00091,false_positive,đột quỵ,TRIỆU_CHỨNG,11,18,,isHistorical,,,prediction with no gold match
+e2e:hist_00091,wrong_type,đột quỵ,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,11,18,isHistorical,isHistorical,,,type mismatch at same span
+e2e:hist_00092,missed_entity,viêm khớp dạng thấp,CHẨN_ĐOÁN,11,30,isHistorical,,M06.9,,gold entity not in predictions
+e2e:hist_00092,false_positive,viêm khớp,TRIỆU_CHỨNG,11,20,,isHistorical,,,prediction with no gold match
+e2e:hist_00095,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,11,24,isHistorical,,I10,,gold entity not in predictions
+e2e:hist_00095,false_positive,tăng huyết áp,TRIỆU_CHỨNG,11,24,,isHistorical,,,prediction with no gold match
+e2e:hist_00095,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,11,24,isHistorical,isHistorical,,,type mismatch at same span
+e2e:hist_00096,missed_entity,viêm phổi,CHẨN_ĐOÁN,11,20,isHistorical,,J18.9,,gold entity not in predictions
+e2e:hist_00096,false_positive,viêm phổi,TRIỆU_CHỨNG,11,20,,isHistorical,,,prediction with no gold match
+e2e:hist_00096,wrong_type,viêm phổi,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,11,20,isHistorical,isHistorical,,,type mismatch at same span
+e2e:hist_00098,missed_entity,nhiễm trùng tiết niệu,CHẨN_ĐOÁN,11,32,isHistorical,,N39.0,,gold entity not in predictions
+e2e:hist_00098,false_positive,nhiễm trùng,TRIỆU_CHỨNG,11,22,,isHistorical,,,prediction with no gold match
+e2e:hist_00100,missed_entity,viêm phổi cộng đồng,CHẨN_ĐOÁN,8,27,isHistorical,,J18.9,,gold entity not in predictions
+e2e:hist_00100,false_positive,viêm phổi,TRIỆU_CHỨNG,8,17,,isHistorical,,,prediction with no gold match
+e2e:fam_00101,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,14,27,isFamily,,I10,,gold entity not in predictions
+e2e:fam_00101,false_positive,tăng huyết áp,TRIỆU_CHỨNG,14,27,,isFamily,,,prediction with no gold match
+e2e:fam_00101,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,14,27,isFamily,isFamily,,,type mismatch at same span
+e2e:fam_00102,missed_entity,suy tim,CHẨN_ĐOÁN,16,23,isFamily,,I50.9,,gold entity not in predictions
+e2e:fam_00102,false_positive,suy tim,TRIỆU_CHỨNG,16,23,,isFamily,,,prediction with no gold match
+e2e:fam_00102,wrong_type,suy tim,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,16,23,isFamily,isFamily,,,type mismatch at same span
+e2e:fam_00103,missed_entity,sỏi thận,CHẨN_ĐOÁN,16,24,isFamily,,N20.0,,gold entity not in predictions
+e2e:fam_00106,missed_entity,nhiễm trùng tiết niệu,CHẨN_ĐOÁN,14,35,isFamily,,N39.0,,gold entity not in predictions
+e2e:fam_00106,false_positive,nhiễm trùng,TRIỆU_CHỨNG,14,25,,isFamily,,,prediction with no gold match
+e2e:fam_00108,missed_entity,viêm gan B,CHẨN_ĐOÁN,25,35,isFamily,,B18.1,,gold entity not in predictions
+e2e:fam_00108,false_positive,viêm gan,TRIỆU_CHỨNG,25,33,,isHistorical|isFamily,,,prediction with no gold match
+e2e:fam_00109,missed_entity,đái tháo đường type 2,CHẨN_ĐOÁN,14,35,isFamily,,E11.9,,gold entity not in predictions
+e2e:fam_00109,false_positive,đái tháo đường,TRIỆU_CHỨNG,14,28,,isFamily,,,prediction with no gold match
+e2e:symp_00021,missed_entity,phù mặt,TRIỆU_CHỨNG,3,10,,,,,gold entity not in predictions
+e2e:symp_00022,missed_entity,bầm tím,TRIỆU_CHỨNG,10,17,,,,,gold entity not in predictions
+e2e:symp_00023,missed_entity,ủn ỉn sốt,TRIỆU_CHỨNG,13,22,,,,,gold entity not in predictions
+e2e:symp_00024,missed_entity,hoa mắt,TRIỆU_CHỨNG,10,17,,,,,gold entity not in predictions
+e2e:symp_00026,missed_entity,khó thở,TRIỆU_CHỨNG,13,20,,,,,gold entity not in predictions
+e2e:symp_00027,missed_entity,vàng da,TRIỆU_CHỨNG,10,17,,,,,gold entity not in predictions
+e2e:symp_00028,missed_entity,sốt nhẹ,TRIỆU_CHỨNG,3,10,,,,,gold entity not in predictions
+e2e:symp_00029,missed_entity,đi lỏng,TRIỆU_CHỨNG,10,17,,,,,gold entity not in predictions
+e2e:symp_00030,missed_entity,vàng mắt,TRIỆU_CHỨNG,23,31,,,,,gold entity not in predictions
+e2e:symp_00031,missed_entity,nôn,TRIỆU_CHỨNG,6,9,,,,,gold entity not in predictions
+e2e:symp_00035,missed_entity,xuất huyết da,TRIỆU_CHỨNG,13,26,,,,,gold entity not in predictions
+e2e:symp_00036,missed_entity,đi cầu khó,TRIỆU_CHỨNG,6,16,,,,,gold entity not in predictions
+e2e:symp_00038,missed_entity,chóng mặt,TRIỆU_CHỨNG,13,22,,,,,gold entity not in predictions
+e2e:neg_00082,missed_entity,nuốt đau,TRIỆU_CHỨNG,11,19,isNegated,,,,gold entity not in predictions
+e2e:neg_00085,missed_entity,bầm tím,TRIỆU_CHỨNG,16,23,isNegated,,,,gold entity not in predictions
+e2e:neg_00086,missed_entity,sốt nhẹ,TRIỆU_CHỨNG,14,21,isNegated,,,,gold entity not in predictions
+e2e:neg_00087,missed_entity,vàng mắt,TRIỆU_CHỨNG,19,27,isNegated,,,,gold entity not in predictions
+e2e:neg_00089,missed_entity,ý whơi,TRIỆU_CHỨNG,11,17,isNegated,,,,gold entity not in predictions
+e2e:multi_00116,missed_entity,sốt cao,TRIỆU_CHỨNG,16,23,,,,,gold entity not in predictions
+e2e:multi_00116,missed_entity,ho đờm xanh,TRIỆU_CHỨNG,3,14,,,,,gold entity not in predictions
+e2e:multi_00116,false_positive,ho đờm,TRIỆU_CHỨNG,3,9,,,,,prediction with no gold match
+e2e:drug_00043,missed_entity,ciprofloxacin,THUỐC,7,20,,,2556,,gold entity not in predictions
+e2e:drug_00043,false_positive,Kê đơn ciprofloxaci,THUỐC,0,19,,,,2556|314076|197361|7646|83367,prediction with no gold match
+e2e:lab_00061,missed_entity,Hemoglobin: 95 g/L,KẾT_QUẢ_XÉT_NGHIỆM,3,21,,,,,gold entity not in predictions
+e2e:lab_00062,missed_entity,LDL 165 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,0,13,,,,,gold entity not in predictions
+e2e:lab_00062,false_positive,LDL,TÊN_XÉT_NGHIỆM,0,3,,,,,prediction with no gold match
+e2e:lab_00062,false_positive,165 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,4,13,,,,,prediction with no gold match
+e2e:lab_00064,missed_entity,AST: 72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,3,14,,,,,gold entity not in predictions
+e2e:lab_00064,false_positive,AST,TÊN_XÉT_NGHIỆM,3,6,,,,,prediction with no gold match
+e2e:lab_00064,false_positive,72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,8,14,,,,,prediction with no gold match
+e2e:lab_00066,missed_entity,Hematocrit 32%,KẾT_QUẢ_XÉT_NGHIỆM,5,19,,,,,gold entity not in predictions
+e2e:lab_00067,missed_entity,AST 72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,5,15,,,,,gold entity not in predictions
+e2e:lab_00067,false_positive,AST,TÊN_XÉT_NGHIỆM,5,8,,,,,prediction with no gold match
+e2e:lab_00067,false_positive,72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,9,15,,,,,prediction with no gold match
+e2e:lab_00069,missed_entity,Cholesterol 245 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,12,33,,,,,gold entity not in predictions
+e2e:lab_00069,false_positive,Cholesterol 245 mg,THUỐC,12,30,,,,855332|198211|8640|6809|617312,prediction with no gold match
+e2e:lab_00070,missed_entity,Creatinine 1.5 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,0,20,,,,,gold entity not in predictions
+e2e:lab_00070,false_positive,Creatinine 1.5 mg,THUỐC,0,17,,,,32937|316672|861007|6809|314076,prediction with no gold match
+e2e:lab_00071,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,0,12,,,,,gold entity not in predictions
+e2e:lab_00071,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,4,12,,,,,prediction with no gold match
+e2e:lab_00071,false_positive,WBC,TÊN_XÉT_NGHIỆM,0,3,,,,,prediction with no gold match
+e2e:lab_00073,missed_entity,Creatinine: 1.5 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,3,24,,,,,gold entity not in predictions
+e2e:lab_00073,false_positive,1.5 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,15,24,,,,,prediction with no gold match
+e2e:lab_00076,missed_entity,K+ 5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,5,18,,,,,gold entity not in predictions
+e2e:lab_00076,false_positive,K,TÊN_XÉT_NGHIỆM,5,6,,,,,prediction with no gold match
+e2e:lab_00076,false_positive,5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,8,18,,,,,prediction with no gold match
+e2e:lab_00077,missed_entity,BUN: 25 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,3,16,,,,,gold entity not in predictions
+e2e:lab_00077,false_positive,25 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,8,16,,,,,prediction with no gold match
+e2e:lab_00077,false_positive,BUN,TÊN_XÉT_NGHIỆM,3,6,,,,,prediction with no gold match
+e2e:lab_00078,missed_entity,HDL: 35 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,8,21,,,,,gold entity not in predictions
+e2e:lab_00078,false_positive,HDL,TÊN_XÉT_NGHIỆM,8,11,,,,,prediction with no gold match
+e2e:lab_00078,false_positive,35 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,13,21,,,,,prediction with no gold match
+e2e:lab_00079,missed_entity,K+: 5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,8,22,,,,,gold entity not in predictions
+e2e:lab_00079,false_positive,K,TÊN_XÉT_NGHIỆM,8,9,,,,,prediction with no gold match
+e2e:lab_00079,false_positive,5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,12,22,,,,,prediction with no gold match
+e2e:multi_00112,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,0,12,,,,,gold entity not in predictions
+e2e:multi_00112,missed_entity,CRP 85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,14,25,,,,,gold entity not in predictions
+e2e:multi_00112,false_positive,85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,18,25,,,,,prediction with no gold match
+e2e:multi_00112,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,4,12,,,,,prediction with no gold match
+e2e:multi_00112,false_positive,CRP,TÊN_XÉT_NGHIỆM,14,17,,,,,prediction with no gold match
+e2e:multi_00112,false_positive,WBC,TÊN_XÉT_NGHIỆM,0,3,,,,,prediction with no gold match
+e2e:multi_00115,missed_entity,Glucose 126 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,12,29,,,,,gold entity not in predictions
+e2e:multi_00115,missed_entity,Cholesterol 245 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,31,52,,,,,gold entity not in predictions
+e2e:multi_00115,false_positive,Glucose 126 mg,THUỐC,12,26,,,,198211|316672|317541|1191|860975,prediction with no gold match
+e2e:multi_00115,false_positive,Cholesterol 245 mg,THUỐC,31,49,,,,855332|198211|8640|6809|617312,prediction with no gold match
+e2e:diag_00002,missed_entity,viêm phổi mắc phải,CHẨN_ĐOÁN,24,42,,,J18.9,,gold entity not in predictions
+e2e:diag_00002,false_positive,viêm phổi,CHẨN_ĐOÁN,24,33,,,,J18.9|J44.9|K29.9|J06.9|J20.9,prediction with no gold match
+e2e:diag_00004,missed_entity,viêm bàng quang,CHẨN_ĐOÁN,16,31,,,N30.9,,gold entity not in predictions
+e2e:diag_00017,missed_entity,viêm dạ dày,CHẨN_ĐOÁN,12,23,,,K29.9,,gold entity not in predictions
+e2e:diag_00017,false_positive,viêm dạ dày,TRIỆU_CHỨNG,12,23,,,,,prediction with no gold match
+e2e:diag_00017,wrong_type,viêm dạ dày,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,12,23,,,,,type mismatch at same span
+e2e:hist_00094,missed_entity,viêm phổi mắc phải,CHẨN_ĐOÁN,8,26,isHistorical,,J18.9,,gold entity not in predictions
+e2e:hist_00094,false_positive,viêm phổi,TRIỆU_CHỨNG,8,17,,isHistorical,,,prediction with no gold match
+e2e:hist_00097,missed_entity,viêm bàng quang,CHẨN_ĐOÁN,6,21,isHistorical,,N30.9,,gold entity not in predictions
+e2e:fam_00105,missed_entity,viêm dạ dày,CHẨN_ĐOÁN,25,36,isFamily,,K29.9,,gold entity not in predictions
+e2e:fam_00105,false_positive,viêm dạ dày,TRIỆU_CHỨNG,25,36,,isHistorical|isFamily,,,prediction with no gold match
+e2e:fam_00105,wrong_type,viêm dạ dày,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,25,36,isFamily,isHistorical|isFamily,,,type mismatch at same span
+e2e:fam_00107,missed_entity,viêm phổi mắc phải,CHẨN_ĐOÁN,25,43,isFamily,,J18.9,,gold entity not in predictions
+e2e:fam_00107,false_positive,viêm phổi,TRIỆU_CHỨNG,25,34,,isHistorical|isFamily,,,prediction with no gold match
+e2e:symp_00033,missed_entity,nuốt khó,TRIỆU_CHỨNG,13,21,,,,,gold entity not in predictions
+e2e:neg_00081,missed_entity,ho,TRIỆU_CHỨNG,14,16,isNegated,,,,gold entity not in predictions
+e2e:neg_00090,missed_entity,thở nhanh,TRIỆU_CHỨNG,14,23,isNegated,,,,gold entity not in predictions
+e2e:lab_00063,missed_entity,ESR: 45 mm/h,KẾT_QUẢ_XÉT_NGHIỆM,3,15,,,,,gold entity not in predictions
+e2e:lab_00063,false_positive,45 ,KẾT_QUẢ_XÉT_NGHIỆM,8,11,,,,,prediction with no gold match
+e2e:lab_00063,false_positive,ESR,TÊN_XÉT_NGHIỆM,3,6,,,,,prediction with no gold match
+e2e:lab_00065,missed_entity,WBC: 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,3,16,,,,,gold entity not in predictions
+e2e:lab_00065,false_positive,WBC,TÊN_XÉT_NGHIỆM,3,6,,,,,prediction with no gold match
+e2e:lab_00065,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,8,16,,,,,prediction with no gold match
+e2e:lab_00068,missed_entity,Triglyceride 180 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,5,27,,,,,gold entity not in predictions
+e2e:lab_00068,false_positive,Triglyceride 180 mg,THUỐC,5,24,,,,617312|855332|161|317541|8640,prediction with no gold match
+val:val_0001,missed_entity,sốt,TRIỆU_CHỨNG,26,29,isNegated,,,,gold entity not in predictions
+val:val_0001,missed_entity,ho,TRIỆU_CHỨNG,16,18,isNegated,,,,gold entity not in predictions
+val:val_0003,missed_entity,Da vàng,TRIỆU_CHỨNG,0,7,,,,,gold entity not in predictions
+val:val_0008,missed_entity,sốt cao,TRIỆU_CHỨNG,3,10,,,,,gold entity not in predictions
+val:val_0009,missed_entity,khó thở,TRIỆU_CHỨNG,15,22,,,,,gold entity not in predictions
+val:val_0009,missed_entity,thở nhanh,TRIỆU_CHỨNG,24,33,,,,,gold entity not in predictions
+val:val_0010,missed_entity,ran,TRIỆU_CHỨNG,17,20,isNegated,,,,gold entity not in predictions
+val:val_0012,missed_entity,mệt,TRIỆU_CHỨNG,10,13,,,,,gold entity not in predictions
+val:val_0013,missed_entity,ho,TRIỆU_CHỨNG,3,5,,,,,gold entity not in predictions
+val:val_0014,missed_entity,sốt cao,TRIỆU_CHỨNG,11,18,,,,,gold entity not in predictions
+val:val_0014,missed_entity,mệt mỏi,TRIỆU_CHỨNG,20,27,,,,,gold entity not in predictions
+val:val_0016,missed_entity,chướng,TRIỆU_CHỨNG,5,11,,,,,gold entity not in predictions
+val:val_0016,missed_entity,gan to,TRIỆU_CHỨNG,13,19,,,,,gold entity not in predictions
+val:val_0017,missed_entity,chóng mặt,TRIỆU_CHỨNG,19,28,,,,,gold entity not in predictions
+val:val_0017,missed_entity,buồn nôn,TRIỆU_CHỨNG,30,38,,,,,gold entity not in predictions
+val:val_0019,missed_entity,Wilson disease,CHẨN_ĐOÁN,11,25,,,,,gold entity not in predictions
+val:val_0020,missed_entity,viêm phổi cộng đồng,CHẨN_ĐOÁN,11,30,,,,,gold entity not in predictions
+val:val_0020,false_positive,viêm phổi,CHẨN_ĐOÁN,11,20,,,,J18.9|J44.9|K29.9|J06.9|J20.9,prediction with no gold match
+val:val_0021,false_positive,viêm ruột,TRIỆU_CHỨNG,10,19,,,,,prediction with no gold match
+val:val_0021,false_positive,viêm phúc mạc,TRIỆU_CHỨNG,30,43,,,,,prediction with no gold match
+val:val_0022,missed_entity,viêm gan B,CHẨN_ĐOÁN,8,18,isHistorical,,,,gold entity not in predictions
+val:val_0022,false_positive,viêm gan,TRIỆU_CHỨNG,8,16,,isHistorical,,,prediction with no gold match
+val:val_0023,missed_entity,viêm màng não,CHẨN_ĐOÁN,11,24,isNegated,,,,gold entity not in predictions
+val:val_0023,false_positive,viêm màng não,TRIỆU_CHỨNG,11,24,,isNegated,,,prediction with no gold match
+val:val_0023,wrong_type,viêm màng não,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,11,24,isNegated,isNegated,,,type mismatch at same span
+val:val_0024,missed_entity,suy tim độ A,CHẨN_ĐOÁN,22,34,,,,,gold entity not in predictions
+val:val_0024,false_positive,suy tim,CHẨN_ĐOÁN,22,29,,,,I50.9|I21.9|I48.9|E03.9|I25.10,prediction with no gold match
+val:val_0025,missed_entity,nhồi máu cơ tim,CHẨN_ĐOÁN,11,26,isHistorical,,,,gold entity not in predictions
+val:val_0025,false_positive,nhồi máu cơ tim,TRIỆU_CHỨNG,11,26,,isHistorical,,,prediction with no gold match
+val:val_0025,wrong_type,nhồi máu cơ tim,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,11,26,isHistorical,isHistorical,,,type mismatch at same span
+val:val_0026,missed_entity,đái tháo đường,CHẨN_ĐOÁN,21,35,isFamily,,,,gold entity not in predictions
+val:val_0026,false_positive,đái tháo đường,TRIỆU_CHỨNG,21,35,,isFamily,,,prediction with no gold match
+val:val_0026,wrong_type,đái tháo đường,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,21,35,isFamily,isFamily,,,type mismatch at same span
+val:val_0027,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,14,27,,,,,gold entity not in predictions
+val:val_0027,missed_entity,đái tháo đường type 2,CHẨN_ĐOÁN,31,52,,,,,gold entity not in predictions
+val:val_0027,false_positive,đái tháo đường,TRIỆU_CHỨNG,31,45,,,,,prediction with no gold match
+val:val_0027,false_positive,tăng huyết áp,TRIỆU_CHỨNG,14,27,,,,,prediction with no gold match
+val:val_0027,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,14,27,,,,,type mismatch at same span
+val:val_0028,missed_entity,bệnh Pompe,CHẨN_ĐOÁN,10,20,,,,,gold entity not in predictions
+val:val_0029,missed_entity,đái tháo đường type 2,CHẨN_ĐOÁN,16,37,,,,,gold entity not in predictions
+val:val_0029,false_positive,đái tháo đường,CHẨN_ĐOÁN,16,30,,,,E11.9|A09|J06.9|I21.9|G40.909,prediction with no gold match
+val:val_0030,missed_entity,bệnh Fabry,CHẨN_ĐOÁN,9,19,,,,,gold entity not in predictions
+val:val_0031,missed_entity,viêm dạ dày,CHẨN_ĐOÁN,39,50,,,,,gold entity not in predictions
+val:val_0031,missed_entity,trào ngược dạ dày thực quản,CHẨN_ĐOÁN,10,37,,,,,gold entity not in predictions
+val:val_0031,false_positive,viêm dạ dày,TRIỆU_CHỨNG,39,50,,,,,prediction with no gold match
+val:val_0031,false_positive,trào ngược dạ dày,TRIỆU_CHỨNG,10,27,,,,,prediction with no gold match
+val:val_0031,wrong_type,viêm dạ dày,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,39,50,,,,,type mismatch at same span
+val:val_0032,missed_entity,lao phổi,CHẨN_ĐOÁN,14,22,isNegated,,,,gold entity not in predictions
+val:val_0032,false_positive,lao phổi,TRIỆU_CHỨNG,14,22,,isNegated,,,prediction with no gold match
+val:val_0032,wrong_type,lao phổi,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,14,22,isNegated,isNegated,,,type mismatch at same span
+val:val_0033,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,12,25,,,,,gold entity not in predictions
+val:val_0033,false_positive,tăng huyết áp,TRIỆU_CHỨNG,12,25,,,,,prediction with no gold match
+val:val_0033,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,12,25,,,,,type mismatch at same span
+val:val_0035,missed_entity,hen suyễn,CHẨN_ĐOÁN,31,40,isHistorical,,,,gold entity not in predictions
+val:val_0035,false_positive,hen suyễn,TRIỆU_CHỨNG,31,40,,isHistorical,,,prediction with no gold match
+val:val_0035,wrong_type,hen suyễn,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,31,40,isHistorical,isHistorical,,,type mismatch at same span
+val:val_0036,missed_entity,tăng huyết áp,CHẨN_ĐOÁN,16,29,isFamily,,,,gold entity not in predictions
+val:val_0036,false_positive,tăng huyết áp,TRIỆU_CHỨNG,16,29,,isFamily,,,prediction with no gold match
+val:val_0036,wrong_type,tăng huyết áp,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,16,29,isFamily,isFamily,,,type mismatch at same span
+val:val_0037,missed_entity,bệnh mạch vành,CHẨN_ĐOÁN,20,34,isNegated,,,,gold entity not in predictions
+val:val_0038,missed_entity,ung thư vú,CHẨN_ĐOÁN,14,24,isFamily,,,,gold entity not in predictions
+val:val_0038,false_positive,ung thư,TRIỆU_CHỨNG,14,21,,isFamily,,,prediction with no gold match
+val:val_0050,false_positive,dị ứng,TRIỆU_CHỨNG,3,9,,isFamily,,,prediction with no gold match
+val:val_0056,false_positive,viêm khớp,TRIỆU_CHỨNG,12,21,,,,,prediction with no gold match
+val:val_0059,missed_entity,Glucose 126 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,9,26,,,,,gold entity not in predictions
+val:val_0059,false_positive,Glucose 126 mg,THUỐC,9,23,,,,198211|316672|317541|1191|860975,prediction with no gold match
+val:val_0060,missed_entity,Glucose: 126 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,0,18,,,,,gold entity not in predictions
+val:val_0060,false_positive,126 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,9,18,,,,,prediction with no gold match
+val:val_0060,false_positive,Glucose,TÊN_XÉT_NGHIỆM,0,7,,,,,prediction with no gold match
+val:val_0061,false_positive,WBC,TÊN_XÉT_NGHIỆM,39,42,,,,,prediction with no gold match
+val:val_0061,false_positive,Glucose,TÊN_XÉT_NGHIỆM,49,56,,,,,prediction with no gold match
+val:val_0061,false_positive,RBC,TÊN_XÉT_NGHIỆM,44,47,,,,,prediction with no gold match
+val:val_0062,missed_entity,Glucose 126 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,12,29,,,,,gold entity not in predictions
+val:val_0062,missed_entity,Cholesterol 245 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,31,52,,,,,gold entity not in predictions
+val:val_0062,missed_entity,Triglyceride 180 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,54,76,,,,,gold entity not in predictions
+val:val_0062,false_positive,Glucose 126 mg,THUỐC,12,26,,,,198211|316672|317541|1191|860975,prediction with no gold match
+val:val_0062,false_positive,Triglyceride 180 mg,THUỐC,54,73,,,,617312|855332|161|317541|8640,prediction with no gold match
+val:val_0062,false_positive,Cholesterol 245 mg,THUỐC,31,49,,,,855332|198211|8640|6809|617312,prediction with no gold match
+val:val_0064,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,12,24,,,,,gold entity not in predictions
+val:val_0064,missed_entity,CRP 85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,26,37,,,,,gold entity not in predictions
+val:val_0064,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,16,24,,,,,prediction with no gold match
+val:val_0064,false_positive,WBC,TÊN_XÉT_NGHIỆM,12,15,,,,,prediction with no gold match
+val:val_0064,false_positive,85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,30,37,,,,,prediction with no gold match
+val:val_0064,false_positive,CRP,TÊN_XÉT_NGHIỆM,26,29,,,,,prediction with no gold match
+val:val_0066,missed_entity,Hemoglobin 95 g/L,KẾT_QUẢ_XÉT_NGHIỆM,0,17,,,,,gold entity not in predictions
+val:val_0066,false_positive,Hemoglobin 95 g,THUỐC,0,15,,,,32937|8640|723|6809|860975,prediction with no gold match
+val:val_0069,missed_entity,Creatinine 1.5 mg/dL,KẾT_QUẢ_XÉT_NGHIỆM,0,20,,,,,gold entity not in predictions
+val:val_0069,false_positive,Creatinine 1.5 mg,THUỐC,0,17,,,,32937|316672|861007|6809|314076,prediction with no gold match
+val:val_0070,missed_entity,CRP 85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,0,11,,,,,gold entity not in predictions
+val:val_0070,false_positive,CRP,TÊN_XÉT_NGHIỆM,0,3,,,,,prediction with no gold match
+val:val_0070,false_positive,85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,4,11,,,,,prediction with no gold match
+val:val_0071,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,5,17,,,,,gold entity not in predictions
+val:val_0071,missed_entity,Hgb 95 g/L,KẾT_QUẢ_XÉT_NGHIỆM,32,42,,,,,gold entity not in predictions
+val:val_0071,missed_entity,RBC 4.2 T/L,KẾT_QUẢ_XÉT_NGHIỆM,19,30,,,,,gold entity not in predictions
+val:val_0071,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,9,17,,,,,prediction with no gold match
+val:val_0071,false_positive,4.2 ,KẾT_QUẢ_XÉT_NGHIỆM,23,27,,,,,prediction with no gold match
+val:val_0071,false_positive,WBC,TÊN_XÉT_NGHIỆM,5,8,,,,,prediction with no gold match
+val:val_0071,false_positive,95 g/L,KẾT_QUẢ_XÉT_NGHIỆM,36,42,,,,,prediction with no gold match
+val:val_0071,false_positive,RBC,TÊN_XÉT_NGHIỆM,19,22,,,,,prediction with no gold match
+val:val_0071,false_positive,Hgb,TÊN_XÉT_NGHIỆM,32,35,,,,,prediction with no gold match
+val:val_0072,missed_entity,K+ 5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,0,13,,,,,gold entity not in predictions
+val:val_0072,false_positive,K,TÊN_XÉT_NGHIỆM,0,1,,,,,prediction with no gold match
+val:val_0072,false_positive,5.8 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,3,13,,,,,prediction with no gold match
+val:val_0073,missed_entity,Na+ = 132 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,0,16,,,,,gold entity not in predictions
+val:val_0073,false_positive,Na,TÊN_XÉT_NGHIỆM,0,2,,,,,prediction with no gold match
+val:val_0073,false_positive,132 mmol/L,KẾT_QUẢ_XÉT_NGHIỆM,6,16,,,,,prediction with no gold match
+val:val_0074,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,12,24,,,,,gold entity not in predictions
+val:val_0074,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,16,24,,,,,prediction with no gold match
+val:val_0074,false_positive,WBC,TÊN_XÉT_NGHIỆM,12,15,,,,,prediction with no gold match
+val:val_0075,missed_entity,ALT 85 U/L,KẾT_QUẢ_XÉT_NGHIỆM,14,24,,,,,gold entity not in predictions
+val:val_0075,missed_entity,GGT 95 U/L,KẾT_QUẢ_XÉT_NGHIỆM,38,48,,,,,gold entity not in predictions
+val:val_0075,missed_entity,AST 72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,26,36,,,,,gold entity not in predictions
+val:val_0075,false_positive,GGT,TÊN_XÉT_NGHIỆM,38,41,,,,,prediction with no gold match
+val:val_0075,false_positive,72 U/L,KẾT_QUẢ_XÉT_NGHIỆM,30,36,,,,,prediction with no gold match
+val:val_0075,false_positive,AST,TÊN_XÉT_NGHIỆM,26,29,,,,,prediction with no gold match
+val:val_0075,false_positive,85 U/L,KẾT_QUẢ_XÉT_NGHIỆM,18,24,,,,,prediction with no gold match
+val:val_0075,false_positive,95 U/L,KẾT_QUẢ_XÉT_NGHIỆM,42,48,,,,,prediction with no gold match
+val:val_0075,false_positive,ALT,TÊN_XÉT_NGHIỆM,14,17,,,,,prediction with no gold match
+val:val_0077,missed_entity,WBC 12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,23,35,,,,,gold entity not in predictions
+val:val_0077,missed_entity,sốt,TRIỆU_CHỨNG,7,10,,,,,gold entity not in predictions
+val:val_0077,missed_entity,ho,TRIỆU_CHỨNG,3,5,,,,,gold entity not in predictions
+val:val_0077,false_positive,WBC,TÊN_XÉT_NGHIỆM,23,26,,,,,prediction with no gold match
+val:val_0077,false_positive,12.5 G/L,KẾT_QUẢ_XÉT_NGHIỆM,27,35,,,,,prediction with no gold match
+val:val_0078,missed_entity,hen suyễn,CHẨN_ĐOÁN,8,17,isHistorical,,,,gold entity not in predictions
+val:val_0078,false_positive,hen suyễn,TRIỆU_CHỨNG,8,17,,isHistorical,,,prediction with no gold match
+val:val_0078,wrong_type,hen suyễn,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,8,17,isHistorical,isHistorical,,,type mismatch at same span
+val:val_0079,missed_entity,CRP 85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,37,48,,,,,gold entity not in predictions
+val:val_0079,missed_entity,khó thở,TRIỆU_CHỨNG,16,23,,,,,gold entity not in predictions
+val:val_0079,false_positive,85 mg/L,KẾT_QUẢ_XÉT_NGHIỆM,41,48,,,,,prediction with no gold match
+val:val_0079,false_positive,CRP,TÊN_XÉT_NGHIỆM,37,40,,,,,prediction with no gold match
+val:val_0080,missed_entity,nhồi máu cơ tim,CHẨN_ĐOÁN,34,49,isFamily,,,,gold entity not in predictions
+val:val_0080,false_positive,nhồi máu cơ tim,TRIỆU_CHỨNG,34,49,,isFamily,,,prediction with no gold match
+val:val_0080,wrong_type,nhồi máu cơ tim,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,34,49,isFamily,isFamily,,,type mismatch at same span
+val:val_0081,missed_entity,sốt cao,TRIỆU_CHỨNG,16,23,,,,,gold entity not in predictions
+val:val_0081,missed_entity,ho đờm xanh,TRIỆU_CHỨNG,3,14,,,,,gold entity not in predictions
+val:val_0081,false_positive,ho đờm,TRIỆU_CHỨNG,3,9,,,,,prediction with no gold match
+val:val_0083,missed_entity,đái tháo đường type 2,CHẨN_ĐOÁN,11,32,,,,,gold entity not in predictions
+val:val_0083,false_positive,đái tháo đường,CHẨN_ĐOÁN,11,25,,,,E11.9|A09|J06.9|I21.9|G40.909,prediction with no gold match
+val:val_0085,false_positive,Viêm phổi,TRIỆU_CHỨNG,0,9,,,,,prediction with no gold match
+val:val_0087,missed_entity,hypertension,CHẨN_ĐOÁN,12,24,,,,,gold entity not in predictions
+val:val_0087,false_positive,hypertension,TRIỆU_CHỨNG,12,24,,,,,prediction with no gold match
+val:val_0087,wrong_type,hypertension,pred=TRIỆU_CHỨNG gold=CHẨN_ĐOÁN,12,24,,,,,type mismatch at same span
+val:val_0088,false_positive,Đau đầu,TRIỆU_CHỨNG,0,7,,,,,prediction with no gold match
+val:val_0089,missed_entity,ho,TRIỆU_CHỨNG,16,18,isNegated,,,,gold entity not in predictions
+val:val_0089,missed_entity,sốt,TRIỆU_CHỨNG,29,32,,,,,gold entity not in predictions
+val:val_0091,false_positive,đường huyết,TÊN_XÉT_NGHIỆM,23,34,,,,,prediction with no gold match
+val:val_0093,false_positive,WBC,TÊN_XÉT_NGHIỆM,0,3,,,,,prediction with no gold match
+val:val_0094,missed_entity,ho,TRIỆU_CHỨNG,3,5,,,,,gold entity not in predictions
+val:val_0096,false_positive,Glucose,TÊN_XÉT_NGHIỆM,0,7,,,,,prediction with no gold match
+val:val_0099,false_positive,viêm phổi,TRIỆU_CHỨNG,18,27,,isNegated,,,prediction with no gold match

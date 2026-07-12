@@ -1,0 +1,6 @@
+entity_type,precision,recall,f1,support
+TRIỆU_CHỨNG,0.3784,0.4118,0.3944,34
+TÊN_XÉT_NGHIỆM,0.0,0.0,0.0,0
+KẾT_QUẢ_XÉT_NGHIỆM,0.0,0.0,0.0,20
+CHẨN_ĐOÁN,0.7,0.2258,0.3415,31
+THUỐC,0.8125,1.0,0.8966,26
