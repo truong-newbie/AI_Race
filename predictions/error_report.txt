@@ -1,0 +1,178 @@
+================================================================================
+ERROR ANALYSIS REPORT
+================================================================================
+
+Total entities extracted: 757
+
+--- CATEGORY 1: FALSE POSITIVE SYMPTOMS (0 unique) ---
+
+--- CATEGORY 2: FALSE POSITIVE NUMBERS AS LAB RESULTS (137 unique) ---
+  [3.txt] '0.01' at [3587, 3591]
+    Context: ... troponin 0.01.
+- chụp x...
+  [3.txt] '0.01\n' at [4135, 4140]
+    Context: ... troponin 0.01
+- rung nhĩ...
+  [5.txt] 'ast' at [809, 812]
+    Context: ...men
+    - ast (aspartat...
+  [5.txt] '319\n    ' at [845, 853]
+    Context: ...erase) là 319
+    - alt (ala...
+  [5.txt] 'alt' at [855, 858]
+    Context: ...319
+    - alt (alanine ...
+  [5.txt] '690\n    ' at [889, 897]
+    Context: ...erase) là 690
+    - phosphat...
+  [5.txt] '2.4\n    ' at [965, 973]
+    Context: ...tbili) là 2.4
+    - bạch cầu...
+  [5.txt] 'wbc' at [985, 988]
+    Context: ...bạch cầu (wbc) 11.6
+   ...
+  [5.txt] '11.6\n    ' at [990, 999]
+    Context: ...cầu (wbc) 11.6
+    - Đã lấy c...
+  [12.txt] '3' at [984, 985]
+    Context: ... tylenol
+
+3.  Đánh gi...
+  [12.txt] '11.3\n    ' at [1068, 1077]
+    Context: ...g cao lên 11.3
+    Kết quả ch...
+  [17.txt] '11 ' at [1409, 1412]
+    Context: ...trophil
+- 11 lymphocyte...
+  [17.txt] '7\n' at [1442, 1444]
+    Context: ...ường chem 7
+- ck 58
+- ...
+  [17.txt] '58\n' at [1449, 1452]
+    Context: ...em 7
+- ck 58
+- alt 92
+-...
+  [17.txt] 'alt' at [1454, 1457]
+    Context: ...- ck 58
+- alt 92
+- hiv ...
+  [17.txt] '92\n' at [1458, 1461]
+    Context: ... 58
+- alt 92
+- hiv vl đ...
+  [32.txt] '2 ' at [1475, 1477]
+    Context: ...albuterol 2 lần, dùng ...
+  [35.txt] '39.2\n    ' at [1307, 1316]
+    Context: ...u tăng là 39.2
+    - creatini...
+  [35.txt] '3.0\n    ' at [1331, 1339]
+    Context: ...atinin là 3.0
+    - troponin...
+  [35.txt] '0.10\n    ' at [1353, 1362]
+    Context: ...oponin là 0.10
+    - inr là 1...
+
+--- CATEGORY 3: VITAL SIGNS CLUSTERED AS ONE ENTITY (0 unique) ---
+
+--- CATEGORY 4: TRUNCATED ENTITIES (71 unique) ---
+  [1.txt] 'Thuốc trước khi n' at [21, 38]
+    Context: ... bệnh
+    Thuốc trước khi nhập viện
+ ...
+  [2.txt] 'xơ gan' at [61, 67]
+    Context: ... nghi ngờ xơ gan do rượu
+ ...
+  [3.txt] 'Thuốc trước khi n' at [293, 310]
+    Context: ...h chủ nhỏ
+Thuốc trước khi nhập viện l...
+  [5.txt] 'viêm gan' at [787, 795]
+    Context: ...iệm
+    - viêm gan do men
+  ...
+  [5.txt] 'Đặt nội khí quản' at [1269, 1285]
+    Context: ...ường mật.
+Đặt nội khí quản nhằm 
+Đặt...
+  [5.txt] 'hen' at [1409, 1412]
+    Context: ...- Đã đặt phentolamine...
+  [7.txt] 'Thuốc trước khi n' at [155, 172]
+    Context: ... rượu
+    Thuốc trước khi nhập viện l...
+  [7.txt] 'loạn thần' at [2299, 2308]
+    Context: ...à thực sự loạn thần...
+  [9.txt] 'Thuốc trước khi n' at [77, 94]
+    Context: ... hiệu
+    Thuốc trước khi nhập viện: ...
+  [11.txt] 'xơ gan' at [191, 197]
+    Context: ...Bệnh nhân xơ gan mất bù có...
+  [11.txt] 'Thuốc trước khi n' at [273, 290]
+    Context: ...phổi.
+    Thuốc trước khi nhập viện l...
+  [12.txt] 'viêm phế quản' at [901, 914]
+    Context: ... nghi ngờ viêm phế quản do viêm p...
+  [13.txt] 'Thuốc trước khi n' at [286, 303]
+    Context: ...n đây
+    Thuốc trước khi nhập viện
+ ...
+  [16.txt] 'bệnh phổi tắc nghẽn' at [73, 92]
+    Context: ...i tràng
+- bệnh phổi tắc nghẽn mạn tính,...
+  [16.txt] 'xơ gan' at [337, 343]
+    Context: ...iên quan: xơ gan do rượu
+
+...
+
+--- CATEGORY 5: isHistorical ON CURRENT TREATMENTS (10 unique) ---
+  [1.txt] 'atenolol' assertions=['isHistorical']
+    Context: ...e cho viêm tuyến mồ hôi
+    - atenolol (uống hôm nay)
+    Các yếu tố...
+  [19.txt] 'Thuốc trước khi n' assertions=['isNegated', 'isHistorical']
+    Context: ...u di căn bán cầu não phải
+    Thuốc trước khi nhập viện: vicodin (uống không ...
+  [34.txt] 'uống kém do b' assertions=['isHistorical']
+    Context: ...Triệu chứng hiện tại
+    - ăn uống kém do buồn nôn
+    - đau bụng/khó chị...
+  [34.txt] 'uống kém do b' assertions=['isHistorical']
+    Context: ... trước khi nhập viện
+    - ăn uống kém do buồn nôn, được cho là do tác dụ...
+  [35.txt] 'uống sàn do ' assertions=['isNegated', 'isHistorical']
+    Context: ...ạng suy kiệt
+    - trượt ngã xuống sàn do yếu cơ
+    - Ăn uống kém, ăn v...
+  [44.txt] 'uống cánh tay t' assertions=['isNegated', 'isHistorical']
+    Context: ... nằm
+- nhói
+- bên trái
+- lan xuống cánh tay trái
+- kèm theo tê bì ở cánh ta...
+  [70.txt] 'uống 2 chai th' assertions=['isHistorical']
+    Context: ...ng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ
+
+2. ...
+  [70.txt] 'uống 2 chai th' assertions=['isNegated', 'isHistorical']
+    Context: ...ng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ
+- Tạ...
+  [75.txt] 'uống cánh tay t' assertions=['isHistorical']
+    Context: ...ện: đau ngực trái dữ dội lan xuống cánh tay trái
+    Theo lời kể bệnh nhân ...
+  [75.txt] 'uống cánh tay t' assertions=['isNegated', 'isHistorical']
+    Context: ...  - đau ngực trái dữ dội lan xuống cánh tay trái
+    - vã mồ hôi
+    - khó ...
+
+--- CATEGORY 6: NOISY/INCOMPLETE ENTITIES (0 unique) ---
+
+================================================================================
+SUMMARY:
+  False positive symptoms:       0
+  False positive lab numbers:     137
+  Vital signs clusters:           0
+  Truncated entities:             71
+  Over-marked historical:         10
+  Noisy/incomplete entities:      0
+  TOTAL identified issues:        218
+  Total entities:                 757
+  Error rate (lower bound):       218/757 = 28.8%

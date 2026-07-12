@@ -1,0 +1,1 @@
+{"test1_has_hist": true, "test1_hist_match": {"pattern": "(?<![a-zA-Zăâđêôơưạảấầẩẫậắằẳẵặẫễểỉịỏõọồốổỗờớởỡợ])tiền\\s+sử\\s+bệnh\\b", "matched": "tiền sử bệnh"}, "test2_has_hist": false}

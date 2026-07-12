@@ -1,0 +1,204 @@
+[
+  {
+    "text": "hen suyễn",
+    "position": [
+      54,
+      63
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "rối loạn lo âu",
+    "position": [
+      70,
+      84
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      91,
+      104
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      106,
+      119
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Táo bón mãn",
+    "position": [
+      127,
+      138
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      235,
+      238
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      459,
+      470
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      550,
+      553
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      804,
+      807
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "26.7\n    ",
+    "position": [
+      856,
+      865
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bnp",
+    "position": [
+      867,
+      870
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "4227\n    ",
+    "position": [
+      871,
+      880
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "3.2\n    ",
+    "position": [
+      887,
+      895
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "troponin",
+    "position": [
+      897,
+      905
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "0.01\n    ",
+    "position": [
+      906,
+      915
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "1.8\n    ",
+    "position": [
+      925,
+      933
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      1187,
+      1196
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Ceftriaxone",
+    "position": [
+      1291,
+      1302
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "8628",
+      "83367",
+      "1116635",
+      "285070",
+      "8640"
+    ]
+  }
+]

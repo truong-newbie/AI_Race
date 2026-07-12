@@ -1,0 +1,97 @@
+[
+  {
+    "text": "chức năng gan",
+    "position": [
+      201,
+      214
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khối u",
+    "position": [
+      499,
+      505
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      653,
+      660
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "khối u",
+    "position": [
+      740,
+      746
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chức năng gan",
+    "position": [
+      846,
+      859
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      935,
+      942
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khối u",
+    "position": [
+      1207,
+      1213
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khối u",
+    "position": [
+      1461,
+      1467
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J06.9",
+      "K58.9",
+      "I25.10",
+      "I21.9",
+      "K26.9"
+    ]
+  }
+]

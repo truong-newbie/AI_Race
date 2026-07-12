@@ -24,6 +24,14 @@ from src.assertion.scope import (
     apply_scope_rules,
 )
 
+# Section header patterns that are NOT historical cues.
+# "Tiền sử bệnh hiện tại" in Vietnamese medical records is a section header
+# (e.g. "1. Tiền sử bệnh hiện tại"), not a historical assertion about the patient.
+SECTION_HEADER_CUE_PATTERN = re.compile(
+    r'^[ \t]*\d+[\.\)][ \t]+tiền\s+sử\b|^[ \t]*-*[ \t]*tiền\s+sử\s+bệnh\s+hiện\s+tại\b',
+    re.IGNORECASE | re.MULTILINE
+)
+
 
 @dataclass
 class AssertionStatus:
@@ -132,28 +140,42 @@ class HistoricalRule:
         Returns:
             (is_historical, confidence, cues_used)
         """
-        # Apply scope rules
-        result = apply_scope_rules(text, entity_start, entity_end, cues, clause_segmenter)
+        # Filter out section header cues — "Tiền sử bệnh hiện tại" is a section title,
+        # not a historical assertion about the patient.
+        historical_cues = [
+            c for c in cues
+            if c.cue_type == CueType.HISTORICAL
+            and not SECTION_HEADER_CUE_PATTERN.search(text[max(0, c.start - 20):c.end + 20])
+        ]
+
+        # Apply scope rules with filtered cues
+        result = apply_scope_rules(text, entity_start, entity_end, historical_cues, clause_segmenter)
 
         if not result["is_historical"]:
             return False, 1.0, []
 
-        # Rule: "có tiền sử" or "tiền sử" immediately after a family relation
-        # (i.e., "Mẹ có tiền sử X", "Bố có tiền sử Y") → isFamily only, not isHistorical.
-        # But standalone historical cues like "từng", "đã từng" should still apply with family.
-        for cue in cues:
-            if cue.cue_type == CueType.HISTORICAL and cue.text.strip() in ("tiền sử", "có tiền sử"):
-                # Check if a family cue is right before this tiền sử cue
-                for fam_cue in cues:
-                    if fam_cue.cue_type == CueType.FAMILY:
-                        gap = cue.start - fam_cue.end
-                        if 0 < gap <= 10:  # Family cue directly before tiền sử
-                            return False, 1.0, []
+        # Rule: family history context — "Bố có tiền sử bệnh tim" → isFamily only, not isHistorical.
+        # When a historical cue ("có tiền sử", "tiền sử bệnh", etc.) is immediately preceded
+        # by a family cue with a small gap, the historical marking is suppressed.
+        # This distinguishes "Bố có tiền sử bệnh tim" (family member's history)
+        # from "bệnh nhân có tiền sử bệnh tim" (patient's own history → isHistorical).
+        # Note: search over ALL cues (not historical_cues) because historical_cues only
+        # contains HISTORICAL-type cues; family cues were filtered out.
+        for cue in historical_cues:
+            if cue.cue_type == CueType.HISTORICAL:
+                cue_text = cue.text.strip()
+                # Only apply this exception for "tiền sử" family history patterns
+                if cue_text.startswith("tiền sử") or cue_text.startswith("có tiền sử"):
+                    for fam_cue in cues:  # search ALL cues
+                        if fam_cue.cue_type == CueType.FAMILY:
+                            gap = cue.start - fam_cue.end
+                            if 0 < gap <= 10:  # Family cue directly before tiền sử
+                                return False, 1.0, []
 
         # Calculate confidence
         cues_used = []
         max_priority = 0
-        for cue in cues:
+        for cue in historical_cues:
             if cue.cue_type == CueType.HISTORICAL:
                 cues_used.append(cue.text)
                 max_priority = max(max_priority, cue.priority)

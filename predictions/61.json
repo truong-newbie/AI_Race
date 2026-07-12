@@ -1,0 +1,22 @@
+[
+  {
+    "text": "đau đầu",
+    "position": [
+      202,
+      209
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu",
+    "position": [
+      609,
+      616
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

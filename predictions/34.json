@@ -1,0 +1,84 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      253,
+      270
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "uống kém do b",
+    "position": [
+      411,
+      424
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "314076",
+      "316672",
+      "198211",
+      "32937",
+      "6809"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      438,
+      446
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ống thông",
+    "position": [
+      759,
+      768
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      898,
+      906
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "uống kém do b",
+    "position": [
+      1191,
+      1204
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "314076",
+      "316672",
+      "198211",
+      "32937",
+      "6809"
+    ]
+  }
+]

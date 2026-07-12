@@ -1,0 +1,173 @@
+[
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      74,
+      90
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      97,
+      110
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "trào ngược dạ dày",
+    "position": [
+      159,
+      176
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      260,
+      268
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      387,
+      395
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm gan",
+    "position": [
+      787,
+      795
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ast",
+    "position": [
+      809,
+      812
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "319\n    ",
+    "position": [
+      845,
+      853
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "alt",
+    "position": [
+      855,
+      858
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "690\n    ",
+    "position": [
+      889,
+      897
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "2.4\n    ",
+    "position": [
+      965,
+      973
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "wbc",
+    "position": [
+      985,
+      988
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "11.6\n    ",
+    "position": [
+      990,
+      999
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đặt nội khí quản",
+    "position": [
+      1269,
+      1285
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": " catheter",
+    "position": [
+      1295,
+      1304
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hen",
+    "position": [
+      1409,
+      1412
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

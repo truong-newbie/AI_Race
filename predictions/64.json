@@ -1,0 +1,73 @@
+[
+  {
+    "text": "viêm túi mật",
+    "position": [
+      109,
+      121
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm túi mật",
+    "position": [
+      359,
+      371
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      547,
+      564
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      741,
+      749
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm túi mật",
+    "position": [
+      1718,
+      1730
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "K29.9",
+      "J18.9",
+      "A09",
+      "K21.9",
+      "J20.9"
+    ]
+  }
+]

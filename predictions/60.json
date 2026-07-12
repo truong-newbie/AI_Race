@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Trào ngược dạ dày",
+    "position": [
+      149,
+      166
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "trào ngược",
+    "position": [
+      254,
+      264
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "trào ngược",
+    "position": [
+      540,
+      550
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

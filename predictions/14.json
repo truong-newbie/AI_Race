@@ -1,0 +1,56 @@
+[
+  {
+    "text": "đau ngực",
+    "position": [
+      69,
+      77
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      123,
+      131
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      182,
+      190
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dị ứng",
+    "position": [
+      293,
+      299
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dị ứng",
+    "position": [
+      312,
+      318
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  }
+]

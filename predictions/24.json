@@ -1,0 +1,34 @@
+[
+  {
+    "text": "ung thư",
+    "position": [
+      58,
+      65
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "F32.9",
+      "J30.4",
+      "I50.9",
+      "E11.9",
+      "I48.9"
+    ]
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      84,
+      91
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "F32.9",
+      "J30.4",
+      "I50.9",
+      "E11.9",
+      "I48.9"
+    ]
+  }
+]

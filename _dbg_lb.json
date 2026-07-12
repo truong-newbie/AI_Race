@@ -1,0 +1,81 @@
+{
+  "char_0": {
+    "char": "B",
+    "is_w": true,
+    "is_space": false,
+    "is_alpha": true
+  },
+  "char_0_ord": 66,
+  "char_1": {
+    "char": "ố",
+    "is_w": true,
+    "is_space": false,
+    "is_alpha": true
+  },
+  "char_1_ord": 7889,
+  "char_2": {
+    "char": " ",
+    "is_w": false,
+    "is_space": true,
+    "is_alpha": false
+  },
+  "char_2_ord": 32,
+  "char_3": {
+    "char": "c",
+    "is_w": true,
+    "is_space": false,
+    "is_alpha": true
+  },
+  "char_3_ord": 99,
+  "char_4": {
+    "char": "ó",
+    "is_w": true,
+    "is_space": false,
+    "is_alpha": true
+  },
+  "char_4_ord": 243,
+  "t1_match": true,
+  "t2_match": true,
+  "t1_match_pos": [
+    6,
+    18
+  ],
+  "t1_char_before": " ",
+  "t1_char_before_ord": 32,
+  "t1_pos_5": {
+    "char": " ",
+    "is_w": false
+  },
+  "t1_pos_6": {
+    "char": "t",
+    "is_w": true
+  },
+  "t1_pos_7": {
+    "char": "i",
+    "is_w": true
+  },
+  "t1_pos_8": {
+    "char": "ề",
+    "is_w": true
+  },
+  "t1_pos_9": {
+    "char": "n",
+    "is_w": true
+  },
+  "t1_pos_10": {
+    "char": " ",
+    "is_w": false
+  },
+  "t1_before_tiensu": {
+    "idx": 6,
+    "char_before": " ",
+    "is_alpha": false,
+    "is_space": true
+  },
+  "t2_before_tiensu": {
+    "idx": 0,
+    "char_before": null,
+    "is_alpha": null,
+    "is_space": null
+  }
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      136,
+      153
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      230,
+      238
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      743,
+      751
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1313,
+      1316
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "27.2\n    ",
+    "position": [
+      1392,
+      1401
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bun",
+    "position": [
+      1403,
+      1406
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc cản quang ch",
+    "position": [
+      1476,
+      1494
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "316672",
+      "855332",
+      "161",
+      "617312",
+      "52175"
+    ]
+  },
+  {
+    "text": "viêm túi mật",
+    "position": [
+      1567,
+      1579
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm túi mật",
+    "position": [
+      1638,
+      1650
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "K29.9",
+      "J18.9",
+      "A09",
+      "K21.9",
+      "J20.9"
+    ]
+  }
+]

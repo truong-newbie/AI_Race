@@ -1,0 +1,158 @@
+[
+  {
+    "text": "viêm tủy",
+    "position": [
+      18,
+      26
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      163,
+      174
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      341,
+      352
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      497,
+      508
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "J06.9",
+      "N39.0",
+      "A09",
+      "B34.9",
+      "E05.90"
+    ]
+  },
+  {
+    "text": "viêm tủy",
+    "position": [
+      655,
+      663
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc kháng sinh ",
+    "position": [
+      740,
+      757
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "83367",
+      "723",
+      "18631"
+    ]
+  },
+  {
+    "text": "Đau bụng",
+    "position": [
+      970,
+      978
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      1147,
+      1158
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ống thông",
+    "position": [
+      1417,
+      1426
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      1472,
+      1483
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": [
+      "J06.9",
+      "N39.0",
+      "A09",
+      "B34.9",
+      "E05.90"
+    ]
+  },
+  {
+    "text": "viêm tủy",
+    "position": [
+      1511,
+      1519
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": [
+      "K29.9",
+      "A09",
+      "J18.9",
+      "K21.9",
+      "J20.9"
+    ]
+  }
+]

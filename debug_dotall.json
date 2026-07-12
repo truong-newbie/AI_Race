@@ -1,0 +1,125 @@
+{
+  "boundary_positions": [
+    0,
+    2,
+    405,
+    407,
+    1114,
+    1679,
+    1752,
+    2423,
+    2425,
+    2487
+  ],
+  "sentences": [
+    {
+      "idx": 1,
+      "start": 0,
+      "end": 2,
+      "stripped_repr": "'1'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 1
+    },
+    {
+      "idx": 2,
+      "start": 2,
+      "end": 405,
+      "stripped_repr": "'tiền sử bệnh\\n    thuốc trước khi nhập viện\\n    - metoprolol 25mg po bid\\n    - do'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 399
+    },
+    {
+      "idx": 3,
+      "start": 405,
+      "end": 407,
+      "stripped_repr": "'2'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 1
+    },
+    {
+      "idx": 4,
+      "start": 407,
+      "end": 1114,
+      "stripped_repr": "'tiền sử bệnh hiện tại\\n    lý do nhập viện:  bệnh nhân vào viện vì xuất hiện triệ'",
+      "pattern_matched": true,
+      "matched_text": "'tiền sử bệnh hiện tại'",
+      "stripped_len": 704
+    },
+    {
+      "idx": 5,
+      "start": 1114,
+      "end": 1679,
+      "stripped_repr": "'- khó thở: nhẹ, liên quan đến đánh trống ngực, liên quan đến khó thở (khởi phát '",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 559
+    },
+    {
+      "idx": 6,
+      "start": 1679,
+      "end": 1752,
+      "stripped_repr": "'ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 71
+    },
+    {
+      "idx": 7,
+      "start": 1752,
+      "end": 2423,
+      "stripped_repr": "'- bắt đầu dùng metoprolol 25mg po bid, không có cải thiện\\n    -  ở nhà bệnh nhân'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 664
+    },
+    {
+      "idx": 8,
+      "start": 2423,
+      "end": 2425,
+      "stripped_repr": "'3'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 1
+    },
+    {
+      "idx": 9,
+      "start": 2425,
+      "end": 2487,
+      "stripped_repr": "'đánh giá tại bệnh viện\\n    kết quả khám lâm sàng\\n    - vs98'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 59
+    },
+    {
+      "idx": 10,
+      "start": 2487,
+      "end": 2869,
+      "stripped_repr": "'3 12987 56 18 99ra\\n    - khi được chuyển vào khoa điều trị, bệnh nhân không còn '",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 381
+    },
+    {
+      "idx": 11,
+      "start": 2869,
+      "end": 2942,
+      "stripped_repr": "'ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên'",
+      "pattern_matched": false,
+      "matched_text": null,
+      "stripped_len": 71
+    }
+  ],
+  "total_sentences": 11,
+  "alt3_on_sent": {
+    "text": "'tiền sử bệnh\\n    thuốc trước khi nhập viện\\n    - metoprol",
+    "matched": false,
+    "match": null
+  },
+  "alt3_ml_on_sent": {
+    "matched": false,
+    "match": null
+  }
+}

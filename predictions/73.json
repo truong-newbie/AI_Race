@@ -1,0 +1,335 @@
+[
+  {
+    "text": "đau ngực",
+    "position": [
+      71,
+      79
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      81,
+      89
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "position": [
+      101,
+      116
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      193,
+      206
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      229,
+      242
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      320,
+      334
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      343,
+      357
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn",
+    "position": [
+      371,
+      390
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn",
+    "position": [
+      417,
+      436
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "J44.9",
+      "J18.9",
+      "K21.9",
+      "I25.10",
+      "N18.3"
+    ]
+  },
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      486,
+      502
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I25.10",
+      "K70.30",
+      "G40.909",
+      "I48.9",
+      "I64"
+    ]
+  },
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      521,
+      537
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I25.10",
+      "K70.30",
+      "G40.909",
+      "I48.9",
+      "I64"
+    ]
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      720,
+      737
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "aspirin 81mg",
+    "position": [
+      760,
+      772
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "317541",
+      "860975",
+      "18631"
+    ]
+  },
+  {
+    "text": "Đột quỵ",
+    "position": [
+      837,
+      844
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "metoprolol succinate 100mg",
+    "position": [
+      860,
+      886
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "317541",
+      "861007",
+      "6809",
+      "314076",
+      "860975"
+    ]
+  },
+  {
+    "text": "lasix 40mg",
+    "position": [
+      911,
+      921
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "197361",
+      "285070",
+      "72407",
+      "72509",
+      "617312"
+    ]
+  },
+  {
+    "text": "atorvastatin 80mg",
+    "position": [
+      946,
+      963
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "617312",
+      "860975",
+      "52175",
+      "317541",
+      "1191"
+    ]
+  },
+  {
+    "text": "lisinopril 2.5mg",
+    "position": [
+      986,
+      1002
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "314076",
+      "1192",
+      "206977",
+      "72509",
+      "198211"
+    ]
+  },
+  {
+    "text": "ranexa 500mg",
+    "position": [
+      1025,
+      1037
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "2556",
+      "18631",
+      "1116635",
+      "161",
+      "72407"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1103,
+      1111
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1315,
+      1323
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1410,
+      1418
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1573,
+      1581
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "total_files": 100,
+  "total_entities": 757,
+  "by_type": {
+    "THUỐC": 125,
+    "TRIỆU_CHỨNG": 400,
+    "TÊN_XÉT_NGHIỆM": 75,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 107,
+    "CHẨN_ĐOÁN": 50
+  },
+  "by_assertion": {
+    "isHistorical": 241,
+    "isNegated": 154,
+    "isFamily": 15
+  },
+  "files_with_entities": 82,
+  "total_errors": 100,
+  "empty_files": 18
+}

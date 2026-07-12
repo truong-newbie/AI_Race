@@ -1,0 +1,118 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      39,
+      52
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      72,
+      86
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      112,
+      128
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "suy tim",
+    "position": [
+      140,
+      147
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      189,
+      202
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      245,
+      262
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "ho khan",
+    "position": [
+      379,
+      386
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Suy tim",
+    "position": [
+      485,
+      492
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ho khan",
+    "position": [
+      630,
+      637
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

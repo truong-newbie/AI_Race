@@ -1,0 +1,59 @@
+[
+  {
+    "text": "Ung thư",
+    "position": [
+      79,
+      86
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tắc mạch",
+    "position": [
+      167,
+      175
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      251,
+      264
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      355,
+      372
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  }
+]

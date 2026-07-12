@@ -1,0 +1,47 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      117,
+      134
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      842,
+      850
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      889,
+      897
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

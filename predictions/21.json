@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      48,
+      61
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suy tim",
+    "position": [
+      68,
+      75
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

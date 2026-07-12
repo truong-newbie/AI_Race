@@ -1,0 +1,135 @@
+[
+  {
+    "text": "đau ngực",
+    "position": [
+      145,
+      153
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      640,
+      648
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "uống cánh tay t",
+    "position": [
+      666,
+      681
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6809",
+      "1191",
+      "1192",
+      "161",
+      "8628"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      945,
+      953
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1032,
+      1040
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "uống cánh tay t",
+    "position": [
+      1058,
+      1073
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "6809",
+      "1191",
+      "1192",
+      "161",
+      "8628"
+    ]
+  },
+  {
+    "text": "aspirin",
+    "position": [
+      1226,
+      1233
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "18631",
+      "617312",
+      "72509"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1400,
+      1408
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "troponin",
+    "position": [
+      1603,
+      1611
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "0.10\n    ",
+    "position": [
+      1615,
+      1624
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  }
+]

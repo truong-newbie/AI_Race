@@ -1,0 +1,192 @@
+[
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      48,
+      62
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "position": [
+      118,
+      133
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dùng trước khi n",
+    "position": [
+      324,
+      340
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "83367",
+      "8640",
+      "161",
+      "855332",
+      "6809"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      386,
+      394
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      463,
+      471
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "uống 9 nitroglycerin ",
+    "position": [
+      624,
+      645
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "8628",
+      "861007",
+      "316672",
+      "72407"
+    ]
+  },
+  {
+    "text": "Đau ngực",
+    "position": [
+      798,
+      806
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1014,
+      1022
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dilaudid 3mg",
+    "position": [
+      1050,
+      1062
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "316672",
+      "312961",
+      "1192",
+      "32937",
+      "855332"
+    ]
+  },
+  {
+    "text": "troponin",
+    "position": [
+      1095,
+      1103
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "0.03\n    ",
+    "position": [
+      1107,
+      1116
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "2.0 ",
+    "position": [
+      1133,
+      1137
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "3.2\n    ",
+    "position": [
+      1140,
+      1148
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1150,
+      1151
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.4\n    ",
+    "position": [
+      1162,
+      1170
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "phosphate",
+    "position": [
+      1172,
+      1181
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.6\n    ",
+    "position": [
+      1185,
+      1193
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  }
+]

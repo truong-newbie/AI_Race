@@ -1,0 +1,118 @@
+{
+  "lines_0_20": [
+    [
+      0,
+      "'1.  Tiền sử bệnh'"
+    ],
+    [
+      1,
+      "'    Thuốc trước khi nhập viện'"
+    ],
+    [
+      2,
+      "'    - metoprolol 25mg po bid'"
+    ],
+    [
+      3,
+      "'    - doxycycline cho viêm tuyến mồ hôi'"
+    ],
+    [
+      4,
+      "'    - atenolol (uống hôm nay)'"
+    ],
+    [
+      5,
+      "'    Các yếu tố nguy cơ liên quan'"
+    ],
+    [
+      6,
+      "'    - Theo lời bệnh nhân kể lại bệnh nhân có   Căng thẳng  n'"
+    ],
+    [
+      7,
+      "'    - Mất việc làm 8 ngày trước'"
+    ],
+    [
+      8,
+      "'    -  Một ngày người bệnh có thể uống hàng chục tách cà phê'"
+    ],
+    [
+      9,
+      "'    -  và 1 tách cà phê không caffeine'"
+    ],
+    [
+      10,
+      "''"
+    ],
+    [
+      11,
+      "'2.  Tiền sử bệnh hiện tại'"
+    ],
+    [
+      12,
+      "'    Lý do nhập viện:  Bệnh nhân vào viện vì xuất hiện triệu '"
+    ],
+    [
+      13,
+      "'    Thời điểm khởi phát triệu chứng: '"
+    ],
+    [
+      14,
+      "'- Cách 10 ngày trước khi vào việc  bệnh nhân xuất hiện cảm g'"
+    ],
+    [
+      15,
+      "'    Các triệu chứng hiện tại'"
+    ],
+    [
+      16,
+      "'    - đánh trống ngực'"
+    ],
+    [
+      17,
+      "'    - Khó thở nhẹ khó thở'"
+    ],
+    [
+      18,
+      "'    - cảm giác thắt chặt ngực vùng trước tim (khởi phát lúc '"
+    ],
+    [
+      19,
+      "'    - Tăng đánh trống ngực (khởi phát lúc 17 giờ)'"
+    ]
+  ],
+  "tien_su_lines": [
+    0,
+    11
+  ],
+  "tien_su_context": [
+    {
+      "line_idx": 0,
+      "lines": [
+        "'1.  Tiền sử bệnh'",
+        "'    Thuốc trước khi nhập viện'",
+        "'    - metoprolol 25mg po bid'"
+      ]
+    },
+    {
+      "line_idx": 11,
+      "lines": [
+        "''",
+        "'2.  Tiền sử bệnh hiện tại'",
+        "'    Lý do nhập viện:  Bệnh nhân vào viện vì xuất hiện triệu chứng đánh trống ngự'",
+        "'    Thời điểm khởi phát triệu chứng: '"
+      ]
+    }
+  ],
+  "tioen_su_benh_hien_tai_pos": [
+    409,
+    430
+  ],
+  "around_tioen_su_benh_hien_tai": "'không caffeine\\n\\n2.  Tiền sử bệnh hiện tại\\n    Lý do nhập viện:  Bệnh nhân vào viện vì xuất '",
+  "text_at_0": "'1.  Tiền sử bệnh\\n    Thuốc trư'",
+  "text_at_2": "'  Tiền sử bệnh\\n    Thuốc trước'",
+  "text_at_400": "'ine\\n\\n2.  Tiền sử bệnh hiện tại'",
+  "text_at_405": "'2.  Tiền sử bệnh hiện tại\\n    '",
+  "text_at_407": "'  Tiền sử bệnh hiện tại\\n    Lý'",
+  "text_at_410": "'iền sử bệnh hiện tại\\n    Lý do'"
+}

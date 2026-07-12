@@ -1,0 +1,164 @@
+{
+  "first_30": [
+    [
+      0,
+      "'1'"
+    ],
+    [
+      1,
+      "'.'"
+    ],
+    [
+      2,
+      "' '"
+    ],
+    [
+      3,
+      "' '"
+    ],
+    [
+      4,
+      "'T'"
+    ],
+    [
+      5,
+      "'i'"
+    ],
+    [
+      6,
+      "'ề'"
+    ],
+    [
+      7,
+      "'n'"
+    ],
+    [
+      8,
+      "' '"
+    ],
+    [
+      9,
+      "'s'"
+    ],
+    [
+      10,
+      "'ử'"
+    ],
+    [
+      11,
+      "' '"
+    ],
+    [
+      12,
+      "'b'"
+    ],
+    [
+      13,
+      "'ệ'"
+    ],
+    [
+      14,
+      "'n'"
+    ],
+    [
+      15,
+      "'h'"
+    ],
+    [
+      16,
+      "'\\n'"
+    ],
+    [
+      17,
+      "' '"
+    ],
+    [
+      18,
+      "' '"
+    ],
+    [
+      19,
+      "' '"
+    ],
+    [
+      20,
+      "' '"
+    ],
+    [
+      21,
+      "'T'"
+    ],
+    [
+      22,
+      "'h'"
+    ],
+    [
+      23,
+      "'u'"
+    ],
+    [
+      24,
+      "'ố'"
+    ],
+    [
+      25,
+      "'c'"
+    ],
+    [
+      26,
+      "' '"
+    ],
+    [
+      27,
+      "'t'"
+    ],
+    [
+      28,
+      "'r'"
+    ],
+    [
+      29,
+      "'ư'"
+    ]
+  ],
+  "pos_0_to_30": "'1.  Tiền sử bệnh\\n    Thuốc trư'",
+  "sentences": [
+    {
+      "start": 0,
+      "end": 2,
+      "text_len": 1,
+      "text_head": "'1'",
+      "hist": false
+    },
+    {
+      "start": 2,
+      "end": 405,
+      "text_len": 399,
+      "text_head": "'Tiền sử bệnh\\n    Thuốc trước khi nhập vi'",
+      "hist": true
+    },
+    {
+      "start": 405,
+      "end": 407,
+      "text_len": 1,
+      "text_head": "'2'",
+      "hist": false
+    },
+    {
+      "start": 407,
+      "end": 1114,
+      "text_len": 704,
+      "text_head": "'Tiền sử bệnh hiện tại\\n    Lý do nhập việ'",
+      "hist": false
+    },
+    {
+      "start": 1114,
+      "end": 1679,
+      "text_len": 559,
+      "text_head": "'- khó thở: Nhẹ, liên quan đến đánh trống'",
+      "hist": false
+    }
+  ],
+  "sent2_raw": "'  Tiền sử bệnh\\n    Thuốc trước khi nhập viện\\n    -'",
+  "sent2_stripped": "'Tiền sử bệnh\\n    Thuốc trước khi nhập viện\\n    - m'"
+}

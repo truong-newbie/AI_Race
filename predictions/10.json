@@ -1,0 +1,41 @@
+[
+  {
+    "text": "đau bụng",
+    "position": [
+      126,
+      134
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      265,
+      272
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khối u",
+    "position": [
+      625,
+      631
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "J06.9",
+      "K58.9",
+      "I25.10",
+      "I21.9",
+      "K26.9"
+    ]
+  }
+]

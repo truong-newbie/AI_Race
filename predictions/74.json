@@ -1,0 +1,129 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      125,
+      142
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      206,
+      217
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      360,
+      368
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dùng iv morphineiv morphin",
+    "position": [
+      629,
+      655
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6809",
+      "861007",
+      "860975",
+      "32937",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      700,
+      708
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      895,
+      906
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1372,
+      1380
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "3",
+    "position": [
+      1476,
+      1477
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "công thức máu",
+    "position": [
+      1527,
+      1540
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "12 ",
+    "position": [
+      1550,
+      1553
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  }
+]

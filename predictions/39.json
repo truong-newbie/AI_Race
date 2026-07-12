@@ -1,0 +1,78 @@
+[
+  {
+    "text": "đau bụng",
+    "position": [
+      37,
+      45
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      118,
+      126
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "công thức máu",
+    "position": [
+      454,
+      467
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "32\n",
+    "position": [
+      471,
+      474
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suy thận",
+    "position": [
+      476,
+      484
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "điện giải",
+    "position": [
+      502,
+      511
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm túi mật",
+    "position": [
+      578,
+      590
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "K29.9",
+      "J18.9",
+      "A09",
+      "K21.9",
+      "J20.9"
+    ]
+  }
+]

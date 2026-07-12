@@ -1,0 +1,136 @@
+{
+  "text": "Bố có tiền sử bệnh tim.",
+  "cues": [
+    {
+      "start": 0,
+      "end": 2,
+      "type": "FAMILY",
+      "text": "Bố",
+      "priority": 15
+    },
+    {
+      "start": 3,
+      "end": 18,
+      "type": "HISTORICAL",
+      "text": "có tiền sử bệnh",
+      "priority": 30
+    },
+    {
+      "start": 3,
+      "end": 13,
+      "type": "HISTORICAL",
+      "text": "có tiền sử",
+      "priority": 25
+    },
+    {
+      "start": 6,
+      "end": 18,
+      "type": "HISTORICAL",
+      "text": "tiền sử bệnh",
+      "priority": 25
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "type": "HISTORICAL",
+      "text": "tiền sử",
+      "priority": 20
+    }
+  ],
+  "historical_result": {
+    "is_historical": true,
+    "confidence": 0.99,
+    "cues_used": [
+      "có tiền sử bệnh",
+      "có tiền sử",
+      "tiền sử bệnh",
+      "tiền sử"
+    ]
+  },
+  "filtered_historical_cues": [
+    {
+      "start": 3,
+      "end": 18,
+      "type": "HISTORICAL",
+      "text": "có tiền sử bệnh"
+    },
+    {
+      "start": 3,
+      "end": 13,
+      "type": "HISTORICAL",
+      "text": "có tiền sử"
+    },
+    {
+      "start": 6,
+      "end": 18,
+      "type": "HISTORICAL",
+      "text": "tiền sử bệnh"
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "type": "HISTORICAL",
+      "text": "tiền sử"
+    }
+  ],
+  "hist_cues": [
+    {
+      "start": 3,
+      "end": 18,
+      "text": "có tiền sử bệnh"
+    },
+    {
+      "start": 3,
+      "end": 13,
+      "text": "có tiền sử"
+    },
+    {
+      "start": 6,
+      "end": 18,
+      "text": "tiền sử bệnh"
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "text": "tiền sử"
+    }
+  ],
+  "fam_cues": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "Bố"
+    }
+  ],
+  "gap_checks": [
+    {
+      "hc": "có tiền sử bệnh",
+      "fc": "Bố",
+      "gap": 1,
+      "condition": true
+    },
+    {
+      "hc": "có tiền sử",
+      "fc": "Bố",
+      "gap": 1,
+      "condition": true
+    },
+    {
+      "hc": "tiền sử bệnh",
+      "fc": "Bố",
+      "gap": 4,
+      "condition": true
+    },
+    {
+      "hc": "tiền sử",
+      "fc": "Bố",
+      "gap": 4,
+      "condition": true
+    }
+  ],
+  "scope_result": {
+    "is_negated": false,
+    "is_historical": true,
+    "is_family": true
+  }
+}

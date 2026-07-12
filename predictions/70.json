@@ -1,0 +1,335 @@
+[
+  {
+    "text": "cao acetaminophen 500mg",
+    "position": [
+      167,
+      190
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "161",
+      "6809",
+      "83367",
+      "2556",
+      "72407"
+    ]
+  },
+  {
+    "text": "uống 2 chai th",
+    "position": [
+      298,
+      312
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "617312",
+      "8628",
+      "72509",
+      "314076",
+      "312961"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      376,
+      384
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      449,
+      457
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      491,
+      499
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      542,
+      550
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      590,
+      598
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      775,
+      783
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      801,
+      809
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cao acetaminophen 500mg",
+    "position": [
+      1179,
+      1202
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "161",
+      "6809",
+      "83367",
+      "2556",
+      "72407"
+    ]
+  },
+  {
+    "text": "uống 2 chai th",
+    "position": [
+      1241,
+      1255
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "617312",
+      "8628",
+      "72509",
+      "314076",
+      "312961"
+    ]
+  },
+  {
+    "text": "ast",
+    "position": [
+      1349,
+      1352
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "421",
+    "position": [
+      1353,
+      1356
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "alt",
+    "position": [
+      1358,
+      1361
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "336",
+    "position": [
+      1362,
+      1365
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "alp",
+    "position": [
+      1367,
+      1370
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "185",
+    "position": [
+      1371,
+      1374
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "0.9\n",
+    "position": [
+      1396,
+      1400
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "acetaminophen",
+    "position": [
+      1485,
+      1498
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "161",
+      "312961",
+      "8628",
+      "314076",
+      "8640"
+    ]
+  },
+  {
+    "text": "3",
+    "position": [
+      1783,
+      1784
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ast",
+    "position": [
+      1830,
+      1833
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "421\n",
+    "position": [
+      1834,
+      1838
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "alt",
+    "position": [
+      1840,
+      1843
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "336\n",
+    "position": [
+      1844,
+      1848
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "alp",
+    "position": [
+      1850,
+      1853
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "185\n",
+    "position": [
+      1854,
+      1858
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "0.9\n",
+    "position": [
+      1880,
+      1884
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm gan",
+    "position": [
+      1945,
+      1953
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "text": "ung thư",
+    "position": [
+      238,
+      245
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ống thông",
+    "position": [
+      784,
+      793
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      1169,
+      1176
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1518,
+      1526
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ống thông",
+    "position": [
+      1981,
+      1990
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      2362,
+      2369
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      2751,
+      2758
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "section_matches": [
+    [
+      0,
+      11,
+      "1.  Tiền sử"
+    ]
+  ],
+  "hist_cues": [
+    [
+      4,
+      16,
+      "Tiền sử bệnh"
+    ],
+    [
+      4,
+      11,
+      "Tiền sử"
+    ],
+    [
+      36,
+      45,
+      "trước khi"
+    ]
+  ],
+  "atenolol_hist": true,
+  "atenolol_neg": false
+}

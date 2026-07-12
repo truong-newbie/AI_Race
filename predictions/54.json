@@ -1,0 +1,277 @@
+[
+  {
+    "text": "ung thư",
+    "position": [
+      66,
+      73
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      262,
+      279
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "suy thận",
+    "position": [
+      479,
+      487
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      655,
+      664
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  },
+  {
+    "text": "điều trị vancomycin tron",
+    "position": [
+      719,
+      743
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "8640",
+      "8628",
+      "161",
+      "2556"
+    ]
+  },
+  {
+    "text": "điều trị vancomycinvà ceftazidime tron",
+    "position": [
+      754,
+      792
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "83367",
+      "6809",
+      "860975",
+      "861007",
+      "8628"
+    ]
+  },
+  {
+    "text": "hct",
+    "position": [
+      1049,
+      1052
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "24.5 ",
+    "position": [
+      1075,
+      1080
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "26.1",
+    "position": [
+      1093,
+      1097
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct",
+    "position": [
+      1231,
+      1234
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "24.7",
+    "position": [
+      1245,
+      1249
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      1691,
+      1700
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct",
+    "position": [
+      1964,
+      1967
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "24.7",
+    "position": [
+      1978,
+      1982
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "3 ",
+    "position": [
+      2526,
+      2528
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct",
+    "position": [
+      2556,
+      2559
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "24.5\n",
+    "position": [
+      2582,
+      2587
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct",
+    "position": [
+      2589,
+      2592
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "26.1\n",
+    "position": [
+      2605,
+      2610
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct",
+    "position": [
+      2612,
+      2615
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "24.7 ",
+    "position": [
+      2626,
+      2631
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      2731,
+      2740
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  },
+  {
+    "text": "suy thận",
+    "position": [
+      2877,
+      2885
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "N18.3",
+      "I50.9",
+      "E03.9",
+      "N20.0",
+      "F32.9"
+    ]
+  }
+]

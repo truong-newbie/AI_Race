@@ -1,0 +1,36 @@
+[
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      53,
+      66
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "hóa trị",
+    "position": [
+      105,
+      112
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau lưng",
+    "position": [
+      174,
+      182
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

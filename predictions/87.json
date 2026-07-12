@@ -1,0 +1,116 @@
+[
+  {
+    "text": "trầm cảm",
+    "position": [
+      108,
+      116
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "rối loạn lo âu",
+    "position": [
+      121,
+      135
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "trầm cảm",
+    "position": [
+      555,
+      563
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cắt cụt",
+    "position": [
+      689,
+      696
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I25.10",
+      "I64",
+      "J06.9",
+      "I21.9",
+      "E05.90"
+    ]
+  },
+  {
+    "text": "cắt cụt",
+    "position": [
+      724,
+      731
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I25.10",
+      "I64",
+      "J06.9",
+      "I21.9",
+      "E05.90"
+    ]
+  },
+  {
+    "text": "thuyên tắc",
+    "position": [
+      768,
+      778
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      795,
+      806
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cắt cụt",
+    "position": [
+      888,
+      895
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Dùng kháng sinh ",
+    "position": [
+      938,
+      954
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "1191",
+      "1192",
+      "83367",
+      "723",
+      "18631"
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "all_hist_cues": [
+    [
+      4,
+      16,
+      "Tiền sử bệnh"
+    ],
+    [
+      4,
+      11,
+      "Tiền sử"
+    ],
+    [
+      27,
+      36,
+      "trước khi"
+    ],
+    [
+      409,
+      421,
+      "Tiền sử bệnh"
+    ],
+    [
+      409,
+      416,
+      "Tiền sử"
+    ],
+    [
+      566,
+      575,
+      "trước khi"
+    ],
+    [
+      1556,
+      1565,
+      "trước khi"
+    ],
+    [
+      1838,
+      1848,
+      "đã sử dụng"
+    ],
+    [
+      2367,
+      2376,
+      "trước khi"
+    ]
+  ],
+  "cues_count": 9,
+  "cue_4_16": {
+    "text": "Tiền sử bệnh",
+    "window": "1.  Tiền sử bệnh\n    Thuốc trước khi",
+    "is_header": true
+  },
+  "cue_4_11": {
+    "text": "Tiền sử",
+    "window": "1.  Tiền sử bệnh\n    Thuốc trướ",
+    "is_header": true
+  },
+  "cue_27_36": {
+    "text": "trước khi",
+    "window": "n sử bệnh\n    Thuốc trước khi nhập viện\n    - met",
+    "is_header": false
+  },
+  "cue_409_421": {
+    "text": "Tiền sử bệnh",
+    "window": "không caffeine\n\n2.  Tiền sử bệnh hiện tại\n    Lý d",
+    "is_header": true
+  },
+  "cue_409_416": {
+    "text": "Tiền sử",
+    "window": "không caffeine\n\n2.  Tiền sử bệnh hiện tại\n    L",
+    "is_header": true
+  },
+  "cue_566_575": {
+    "text": "trước khi",
+    "window": "ng: \n- Cách 10 ngày trước khi vào việc  bệnh nhân",
+    "is_header": false
+  },
+  "cue_1556_1565": {
+    "text": "trước khi",
+    "window": "\n    Các diễn biến  trước khi nhập viện\n    - Đượ",
+    "is_header": false
+  },
+  "cue_1838_1848": {
+    "text": "đã sử dụng",
+    "window": " -  Ở nhà bệnh nhân đã sử dụng atenololtrong ngày\n",
+    "is_header": false
+  },
+  "cue_2367_2376": {
+    "text": "trước khi",
+    "window": "    Tình trạng ngay trước khi nhập viện: Tiếp tục",
+    "is_header": false
+  },
+  "filtered_count": 5,
+  "atenolol_all_hist": true,
+  "atenolol_filtered_hist": true,
+  "remaining_cues": [
+    [
+      27,
+      36,
+      "trước khi"
+    ],
+    [
+      566,
+      575,
+      "trước khi"
+    ],
+    [
+      1556,
+      1565,
+      "trước khi"
+    ],
+    [
+      1838,
+      1848,
+      "đã sử dụng"
+    ],
+    [
+      2367,
+      2376,
+      "trước khi"
+    ]
+  ],
+  "window_atenolol": "huốc trước khi nhập viện\n    - metoprolol 25mg po bid\n    - doxycycline cho viêm tuyến mồ hôi\n    - atenolol (uống hôm nay)\n    Các yếu tố nguy cơ liê",
+  "atenolol_pos": 122
+}

@@ -1,0 +1,61 @@
+{
+  "chars_after_tien_su_benh": [
+    [
+      0,
+      10,
+      "0xa"
+    ],
+    [
+      1,
+      32,
+      "0x20"
+    ],
+    [
+      2,
+      32,
+      "0x20"
+    ],
+    [
+      3,
+      32,
+      "0x20"
+    ],
+    [
+      4,
+      32,
+      "0x20"
+    ],
+    [
+      5,
+      84,
+      "0x54"
+    ]
+  ],
+  "combined_matches": [],
+  "combined_no_ml_matches": [],
+  "scope_combined_matches": [],
+  "p3_matches": [],
+  "s_repr": "'Tiền sử bệnh\\n    Thuốc trước khi'",
+  "s_split": [
+    "Tiền sử bệnh",
+    "    Thuốc trước khi"
+  ],
+  "bytes_at_12": [
+    10
+  ],
+  "bytes_at_13": [
+    32
+  ],
+  "bytes_at_14": [
+    32
+  ],
+  "bytes_at_15": [
+    32
+  ],
+  "bytes_at_16": [
+    32
+  ],
+  "bytes_at_17": [
+    84
+  ]
+}

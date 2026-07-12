@@ -1,0 +1,152 @@
+[
+  {
+    "text": "uống sàn hay ",
+    "position": [
+      548,
+      561
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "285070",
+      "72509",
+      "161"
+    ]
+  },
+  {
+    "text": "dùng intravenous fluid",
+    "position": [
+      877,
+      899
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "161",
+      "316672",
+      "83367",
+      "7646",
+      "6809"
+    ]
+  },
+  {
+    "text": "tai biến mạch máu não",
+    "position": [
+      1022,
+      1043
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      1216,
+      1227
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      1228,
+      1239
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dùng kháng sin",
+    "position": [
+      1263,
+      1277
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "83367",
+      "723",
+      "198211"
+    ]
+  },
+  {
+    "text": "tai biến mạch máu não",
+    "position": [
+      1306,
+      1327
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dùng intravenous fluid",
+    "position": [
+      2074,
+      2096
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "161",
+      "316672",
+      "83367",
+      "7646",
+      "6809"
+    ]
+  },
+  {
+    "text": "dùng kháng sinh ch",
+    "position": [
+      2156,
+      2174
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "1191",
+      "1192",
+      "723",
+      "855332",
+      "8628"
+    ]
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      2176,
+      2187
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      2188,
+      2199
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

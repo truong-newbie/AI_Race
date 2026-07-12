@@ -1,0 +1,370 @@
+[
+  {
+    "text": "hen suyễn",
+    "position": [
+      84,
+      93
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "hen suyễn",
+    "position": [
+      113,
+      122
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      127,
+      144
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "position": [
+      771,
+      782
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "723",
+      "32937",
+      "2556",
+      "18631",
+      "206977"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "position": [
+      820,
+      831
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "723",
+      "32937",
+      "2556",
+      "18631",
+      "206977"
+    ]
+  },
+  {
+    "text": "azithromycin",
+    "position": [
+      884,
+      896
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "18631",
+      "1191",
+      "1192",
+      "2556",
+      "860975"
+    ]
+  },
+  {
+    "text": "prednisone 40 mg",
+    "position": [
+      915,
+      931
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "197361",
+      "7646",
+      "617312",
+      "52175",
+      "198211"
+    ]
+  },
+  {
+    "text": "3 ",
+    "position": [
+      943,
+      945
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "uống 30 mg ",
+    "position": [
+      964,
+      975
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "1192",
+      "197361",
+      "198211",
+      "52175",
+      "314076"
+    ]
+  },
+  {
+    "text": "đau đầu",
+    "position": [
+      1051,
+      1058
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu",
+    "position": [
+      1143,
+      1150
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mất ngủ",
+    "position": [
+      1197,
+      1204
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đau đầu",
+    "position": [
+      1311,
+      1318
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "amoxicillin",
+    "position": [
+      1468,
+      1479
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "723",
+      "32937",
+      "2556",
+      "18631",
+      "206977"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "position": [
+      1487,
+      1498
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "723",
+      "32937",
+      "2556",
+      "18631",
+      "206977"
+    ]
+  },
+  {
+    "text": "azithromycin",
+    "position": [
+      1539,
+      1551
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "1191",
+      "1192",
+      "2556",
+      "860975"
+    ]
+  },
+  {
+    "text": "prednisone 40 mg",
+    "position": [
+      1561,
+      1577
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "197361",
+      "7646",
+      "617312",
+      "52175",
+      "198211"
+    ]
+  },
+  {
+    "text": "3 ",
+    "position": [
+      1589,
+      1591
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "30 ",
+    "position": [
+      1604,
+      1607
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mg",
+    "position": [
+      1607,
+      1609
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đau đầu",
+    "position": [
+      1673,
+      1680
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Mất ngủ",
+    "position": [
+      1720,
+      1727
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      1847,
+      1856
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  },
+  {
+    "text": "3 ",
+    "position": [
+      1926,
+      1928
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "20 ",
+    "position": [
+      1934,
+      1937
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "30 ",
+    "position": [
+      1970,
+      1973
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mg",
+    "position": [
+      1973,
+      1975
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "total of 60 mg",
+    "position": [
+      1991,
+      2005
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "52175",
+      "1191",
+      "6809",
+      "617312",
+      "1192"
+    ]
+  }
+]

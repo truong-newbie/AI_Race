@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      77,
+      94
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      165,
+      173
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "điều trị nội kho",
+    "position": [
+      451,
+      467
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "72509",
+      "855332",
+      "617312",
+      "6809",
+      "860975"
+    ]
+  },
+  {
+    "text": "điều trị ngoại kho",
+    "position": [
+      491,
+      509
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "72509",
+      "617312",
+      "6809",
+      "860975",
+      "861007"
+    ]
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "text": "đái tháo đường",
+    "position": [
+      62,
+      76
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suy tim",
+    "position": [
+      154,
+      161
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Dị ứng",
+    "position": [
+      182,
+      188
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Dị ứng",
+    "position": [
+      190,
+      196
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "furosemide",
+    "position": [
+      197,
+      207
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "83367",
+      "7646",
+      "316672",
+      "1116635",
+      "6809"
+    ]
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1089,
+      1092
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1108,
+      1111
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1163,
+      1166
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1285,
+      1288
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1304,
+      1307
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cho bumetanide 2mg",
+    "position": [
+      1397,
+      1415
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "314076",
+      "7646",
+      "1116635",
+      "316672",
+      "285070"
+    ]
+  },
+  {
+    "text": "cho levofloxacin 750mg",
+    "position": [
+      1463,
+      1485
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "2556",
+      "52175",
+      "83367",
+      "6809",
+      "860975"
+    ]
+  },
+  {
+    "text": "cho aspirin 325mg",
+    "position": [
+      1500,
+      1517
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "1192",
+      "1191",
+      "198211",
+      "855332",
+      "52175"
+    ]
+  },
+  {
+    "text": "cho methylprednisolone 125mg",
+    "position": [
+      1575,
+      1603
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "8640",
+      "206977",
+      "314076",
+      "32937",
+      "198211"
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "Sec2_header": {
+    "text": "Tiền sử bệnh hiện tại\n    Lý do khám",
+    "has_hist": false,
+    "header_match": true
+  },
+  "Sec2_bullet": {
+    "text": "- Thuốc đang dùng: aspirin 100mg",
+    "has_hist": false,
+    "header_match": false
+  },
+  "Sec1_header": {
+    "text": "Tiền sử bệnh\n    Thuốc",
+    "has_hist": false,
+    "header_match": true
+  },
+  "Sec1_bullet": {
+    "text": "- metoprolol 25mg",
+    "has_hist": false,
+    "header_match": false
+  },
+  "family_text": {
+    "text": "Bố có tiền sử bệnh tim.",
+    "has_hist": false,
+    "header_match": false
+  }
+}

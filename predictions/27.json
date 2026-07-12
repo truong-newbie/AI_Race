@@ -1,0 +1,128 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      87,
+      100
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Ung thư",
+    "position": [
+      146,
+      153
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuyên tắc",
+    "position": [
+      178,
+      188
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuyên tắc",
+    "position": [
+      222,
+      232
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      328,
+      345
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      568,
+      576
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      789,
+      797
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "metoprolol 5mg",
+    "position": [
+      1053,
+      1067
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "314076",
+      "1116635",
+      "6809",
+      "8640",
+      "7646"
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "position": [
+      1298,
+      1308
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "314076",
+      "1116635",
+      "7646",
+      "6809",
+      "860975"
+    ]
+  }
+]

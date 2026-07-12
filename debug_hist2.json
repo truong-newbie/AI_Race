@@ -1,0 +1,44 @@
+{
+  "atenolol_pos": 122,
+  "atenolol_filtered_hist": true,
+  "remaining_hist_cues": [
+    {
+      "start": 27,
+      "end": 36,
+      "text": "trước khi"
+    },
+    {
+      "start": 566,
+      "end": 575,
+      "text": "trước khi"
+    },
+    {
+      "start": 1556,
+      "end": 1565,
+      "text": "trước khi"
+    },
+    {
+      "start": 1838,
+      "end": 1848,
+      "text": "đã sử dụng"
+    },
+    {
+      "start": 2367,
+      "end": 2376,
+      "text": "trước khi"
+    }
+  ],
+  "remaining_before_aten": [
+    {
+      "start": 27,
+      "end": 36,
+      "text": "trước khi"
+    }
+  ],
+  "sent_count": 11,
+  "sent_containing_aten": {
+    "start": 2,
+    "end": 405,
+    "hist": true
+  }
+}

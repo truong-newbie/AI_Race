@@ -1,0 +1,268 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      170,
+      187
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "decreased from 5mg",
+    "position": [
+      247,
+      265
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "312961",
+      "83367",
+      "8640",
+      "285070",
+      "6809"
+    ]
+  },
+  {
+    "text": "bid to 1mg",
+    "position": [
+      266,
+      276
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "317541",
+      "316672",
+      "855332",
+      "18631",
+      "314076"
+    ]
+  },
+  {
+    "text": "Suy thận",
+    "position": [
+      386,
+      394
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ghép",
+    "position": [
+      555,
+      559
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "creatinin",
+    "position": [
+      839,
+      848
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "decreased from 5mg",
+    "position": [
+      906,
+      924
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "312961",
+      "83367",
+      "8640",
+      "285070",
+      "6809"
+    ]
+  },
+  {
+    "text": "bid to 1mg",
+    "position": [
+      925,
+      935
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "317541",
+      "316672",
+      "855332",
+      "18631",
+      "314076"
+    ]
+  },
+  {
+    "text": "ghép",
+    "position": [
+      1099,
+      1103
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.1 ",
+    "position": [
+      1193,
+      1197
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1218,
+      1219
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.8 ",
+    "position": [
+      1223,
+      1227
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Suy thận",
+    "position": [
+      1271,
+      1279
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "decreased from 5mg",
+    "position": [
+      1482,
+      1500
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "312961",
+      "83367",
+      "8640",
+      "285070",
+      "6809"
+    ]
+  },
+  {
+    "text": "bid to 1mg",
+    "position": [
+      1501,
+      1511
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "317541",
+      "316672",
+      "855332",
+      "18631",
+      "314076"
+    ]
+  },
+  {
+    "text": "ghép",
+    "position": [
+      1604,
+      1608
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.1",
+    "position": [
+      1747,
+      1750
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1752,
+      1753
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.8",
+    "position": [
+      1754,
+      1757
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.1\n        ",
+    "position": [
+      1947,
+      1959
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1963,
+      1964
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.8\n        ",
+    "position": [
+      1965,
+      1977
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      48,
+      62
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm thần kinh",
+    "position": [
+      83,
+      97
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Viêm gan",
+    "position": [
+      115,
+      123
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dùng trước khi n",
+    "position": [
+      325,
+      341
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "83367",
+      "8640",
+      "161",
+      "855332",
+      "6809"
+    ]
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      952,
+      963
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J06.9",
+      "N39.0",
+      "A09",
+      "B34.9",
+      "E05.90"
+    ]
+  }
+]

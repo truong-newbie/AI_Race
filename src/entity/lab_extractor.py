@@ -81,6 +81,9 @@ RESULT_VALUE_PATTERN = re.compile(
     re.IGNORECASE
 )
 
+# Maximum distance between a lab test name and its result to be considered valid
+LAB_RESULT_PROXIMITY_THRESHOLD = 50
+
 # Reference range pattern (e.g., "3.5-5.0")
 REFERENCE_RANGE_PATTERN = re.compile(
     r'\(([^)]+)\)',  # Text in parentheses
@@ -204,16 +207,29 @@ class LabTestExtractor:
 
         return results
 
-    def extract_results(self, text: str) -> list[LabResultMatch]:
+    def extract_results(self, text: str, proximity_threshold: int = LAB_RESULT_PROXIMITY_THRESHOLD) -> list[LabResultMatch]:
         """
         Extract all lab result values from text.
 
+        Only returns results that are near a lab test name (within proximity_threshold chars).
+        This prevents standalone numbers (page numbers, days, time, dosages) from being
+        falsely extracted as lab results.
+
         Args:
             text: Input text
+            proximity_threshold: Max distance from a lab test name to consider a number a valid result
 
         Returns:
             List of LabResultMatch
         """
+        # Pre-scan text for lab test positions
+        test_positions: list[tuple[int, int]] = []
+        for t in self.lab_pattern.finditer(text):
+            test_positions.append((t.start(), t.end()))
+        for pattern, _ in self.viet_patterns:
+            for m in pattern.finditer(text):
+                test_positions.append((m.start(), m.end()))
+
         results = []
 
         for match in self.result_pattern.finditer(text):
@@ -222,6 +238,18 @@ class LabTestExtractor:
             try:
                 value = float(value_str.replace(',', '.'))
             except ValueError:
+                continue
+
+            # Filter: skip standalone numbers (page numbers, days, time, etc.)
+            # Numbers are valid lab results only if near a lab test name
+            is_near_test = False
+            for t_start, t_end in test_positions:
+                distance = abs(match.start() - t_end) if match.start() >= t_end else abs(t_start - match.end())
+                if distance <= proximity_threshold:
+                    is_near_test = True
+                    break
+
+            if not is_near_test:
                 continue
 
             unit = match.group(2) if match.group(2) else None
@@ -243,18 +271,19 @@ class LabTestExtractor:
 
         return results
 
-    def extract_all(self, text: str) -> tuple[list[LabTestMatch], list[LabResultMatch]]:
+    def extract_all(self, text: str, proximity_threshold: int = LAB_RESULT_PROXIMITY_THRESHOLD) -> tuple[list[LabTestMatch], list[LabResultMatch]]:
         """
         Extract both test names and results.
 
         Args:
             text: Input text
+            proximity_threshold: Max distance from a lab test name to consider a number a valid result
 
         Returns:
             Tuple of (lab_tests, lab_results)
         """
         tests = self.extract_tests(text)
-        results = self.extract_results(text)
+        results = self.extract_results(text, proximity_threshold)
         return tests, results
 
     def extract_lab_panel(self, text: str) -> dict:

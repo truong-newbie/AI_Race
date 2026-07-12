@@ -1,0 +1,14 @@
+[
+  {
+    "text": "xơ gan",
+    "position": [
+      61,
+      67
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

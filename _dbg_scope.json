@@ -1,0 +1,26 @@
+{
+  "test1": {
+    "text": "Bố có tiền sử bệnh tim.",
+    "stripped": "bố có tiền sử bệnh tim.",
+    "has_historical_section": true,
+    "header_pattern_match": false,
+    "header_match_text": null,
+    "hist_pattern_match": {
+      "pattern": "(?<![a-zA-Zăâđêôơưạảấầẩẫậắằẳẵặẫễểỉịỏõọồốổỗờớởỡợ])tiền\\s+sử\\s+bệnh\\b",
+      "matched": "tiền sử bệnh"
+    }
+  },
+  "test2_section_header": {
+    "sentence_text": "Tiền sử bệnh\n    Thuốc trước khi nhập viện\n    - metoprolol ",
+    "stripped": "tiền sử bệnh\n    thuốc trước khi nhập viện\n    - metoprolol ",
+    "has_historical_section": false,
+    "header_pattern_match": true,
+    "header_match_text": "tiền sử bệnh\n   ",
+    "hist_pattern_match": {
+      "pattern": "(?<![a-zA-Zăâđêôơưạảấầẩẫậắằẳẵặẫễểỉịỏõọồốổỗờớởỡợ])tiền\\s+sử\\s+bệnh\\b",
+      "matched": "tiền sử bệnh"
+    }
+  },
+  "SECTION_HEADER_HISTORICAL_PATTERN_flags": 58,
+  "SECTION_HEADER_HISTORICAL_PATTERN_pattern": "^[ \\t]*\\d+[\\.\\)][ \\t]+tiền\\s+sử\\b|^[ \\t]*-*[ \\t]*tiền\\s+sử\\s+bệnh\\s+hiện\\s+tại\\b|^tiền\\s+sử\\s+bệnh\\s+(?=\\s)(?!\\S)"
+}

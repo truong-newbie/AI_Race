@@ -1,0 +1,15 @@
+{
+  "checked": true,
+  "sample": {
+    "text": "rối loạn lo âu",
+    "position": [
+      39,
+      53
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  "file": "99.json",
+  "has_entities": true
+}

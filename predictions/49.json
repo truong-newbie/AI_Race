@@ -1,0 +1,14 @@
+[
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      1184,
+      1195
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  }
+]

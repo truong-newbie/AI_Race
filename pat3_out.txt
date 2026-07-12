@@ -1,0 +1,38 @@
+{
+  "raw_sent_head": "'  Tiền sử bệnh\\n    Thuốc trước khi nhập viện\\n    - metoprolol 25mg po bid\\n    - '",
+  "stripped_head": "'Tiền sử bệnh\\n    Thuốc trước khi nhập viện\\n    - metoprolol 25mg po bid\\n    - do'",
+  "stripped_len": 399,
+  "numbered_tien_su": {
+    "pattern": "^[ \\t]*\\d+[\\.\\)][ \\t]+tiền\\s+sử\\b",
+    "matches": []
+  },
+  "tioen_su_benh_hien_tai_dash": {
+    "pattern": "^[ \\t]*-*[ \\t]*tiền\\s+sử\\s+bệnh\\s+hiện\\s+tại\\b",
+    "matches": []
+  },
+  "tioen_su_benh_hien_tai_plain": {
+    "pattern": "^tiền\\s+sử\\s+bệnh\\s+hiện\\s+tại\\b",
+    "matches": []
+  },
+  "tioen_su_only": {
+    "pattern": "^tiền\\s+sử\\b",
+    "matches": [
+      [
+        0,
+        7,
+        "Tiền sử"
+      ]
+    ]
+  },
+  "tiền_sử_bệnh": {
+    "pattern": "tiền\\s+sử\\s+bệnh\\b",
+    "matches": [
+      [
+        0,
+        12,
+        "Tiền sử bệnh"
+      ]
+    ]
+  },
+  "combined": []
+}

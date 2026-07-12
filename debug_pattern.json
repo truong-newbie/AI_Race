@@ -1,0 +1,23 @@
+{
+  "sent_first50": "'tiền sử bệnh\\n    thuốc trước khi nhập viện\\n    - m'",
+  "sent_last20": "'nolol (uống hôm nay)'",
+  "alt1_match": false,
+  "alt2_match": false,
+  "alt3_match": false,
+  "full_match": false,
+  "crlf_match": false,
+  "lstrip_match": false,
+  "char0": 116,
+  "char1": 105,
+  "char2": 7873,
+  "first4": "'tiền'",
+  "type": "str",
+  "hist_pat_0": true,
+  "hist_pat_0_match": "'tiền sử'",
+  "hist_pat_1": false,
+  "hist_pat_2": false,
+  "hist_pat_3": true,
+  "hist_pat_3_match": "'tiền sử bệnh'",
+  "hist_pat_4": false,
+  "hist_pat_5": false
+}

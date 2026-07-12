@@ -1,0 +1,100 @@
+[
+  {
+    "text": "ung thư",
+    "position": [
+      87,
+      94
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      147,
+      154
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      517,
+      524
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      849,
+      856
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "F32.9",
+      "J30.4",
+      "I50.9",
+      "E11.9",
+      "I48.9"
+    ]
+  },
+  {
+    "text": "khối u",
+    "position": [
+      901,
+      907
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "J06.9",
+      "K58.9",
+      "I25.10",
+      "I21.9",
+      "K26.9"
+    ]
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      919,
+      926
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      953,
+      960
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

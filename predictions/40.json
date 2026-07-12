@@ -1,0 +1,180 @@
+[
+  {
+    "text": "đái tháo đường",
+    "position": [
+      54,
+      68
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      75,
+      88
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      144,
+      161
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "oxy",
+    "position": [
+      308,
+      311
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      906,
+      914
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1047,
+      1050
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "azithromycin",
+    "position": [
+      1207,
+      1219
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": [
+      "18631",
+      "1191",
+      "1192",
+      "2556",
+      "860975"
+    ]
+  },
+  {
+    "text": "điều trị bằng tylenol ",
+    "position": [
+      1229,
+      1251
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": [
+      "161",
+      "8640",
+      "72509",
+      "312961",
+      "723"
+    ]
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1418,
+      1421
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical",
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "protein",
+    "position": [
+      1614,
+      1621
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "troponin",
+    "position": [
+      1636,
+      1644
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "1\n    ",
+    "position": [
+      1654,
+      1660
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      1718,
+      1727
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  }
+]

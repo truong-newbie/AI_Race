@@ -1,0 +1,188 @@
+[
+  {
+    "text": "oxy",
+    "position": [
+      106,
+      109
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "protein",
+    "position": [
+      155,
+      162
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      184,
+      197
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      286,
+      303
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "oxy",
+    "position": [
+      354,
+      357
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      431,
+      434
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Suy giảm miễn dịch",
+    "position": [
+      478,
+      496
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      954,
+      957
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm mô tế bào",
+    "position": [
+      976,
+      990
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1899,
+      1902
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Viêm mô tế bào",
+    "position": [
+      1932,
+      1946
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "M79.3",
+      "K29.9",
+      "A09",
+      "J18.9",
+      "K21.9"
+    ]
+  },
+  {
+    "text": "oxy",
+    "position": [
+      2236,
+      2239
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Viêm mô tế bào",
+    "position": [
+      2267,
+      2281
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nhiễm virus",
+    "position": [
+      2488,
+      2499
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "B34.9",
+      "B18.1",
+      "B18.2",
+      "A09",
+      "J06.9"
+    ]
+  },
+  {
+    "text": "Herpes",
+    "position": [
+      2500,
+      2506
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "I25.10",
+      "J06.9",
+      "J30.4",
+      "F32.9"
+    ]
+  }
+]

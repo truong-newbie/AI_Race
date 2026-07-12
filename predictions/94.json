@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Ung thư",
+    "position": [
+      49,
+      56
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc  weekly taxol\n",
+    "position": [
+      91,
+      111
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "161",
+      "8628",
+      "314076",
+      "197361",
+      "72509"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      181,
+      189
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      295,
+      303
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      413,
+      421
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đau bụng",
+    "position": [
+      559,
+      567
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

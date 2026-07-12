@@ -1,0 +1,179 @@
+[
+  {
+    "text": "Ung thư",
+    "position": [
+      39,
+      46
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn",
+    "position": [
+      73,
+      92
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      120,
+      134
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.9",
+      "A09",
+      "J06.9",
+      "I21.9",
+      "G40.909"
+    ]
+  },
+  {
+    "text": "xơ gan",
+    "position": [
+      137,
+      143
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "K70.30",
+      "B18.1",
+      "B18.2",
+      "I25.10",
+      "I50.9"
+    ]
+  },
+  {
+    "text": "ung thư",
+    "position": [
+      283,
+      290
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "xơ gan",
+    "position": [
+      337,
+      343
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Viêm phổi",
+    "position": [
+      557,
+      566
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      927,
+      935
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      1071,
+      1079
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      1222,
+      1230
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      1326,
+      1334
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng",
+    "position": [
+      1375,
+      1383
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Viêm phổi",
+    "position": [
+      2231,
+      2240
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  }
+]

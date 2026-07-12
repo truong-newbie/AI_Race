@@ -192,11 +192,6 @@ VIETNAMESE_DISEASE_KEYWORDS = [
     r" sonde dạ dày",
     r"ống thông",
     r" catheter",
-
-    # Diagnostic phrases (just markers, not part of disease name)
-    r"bệnh\s+\w+",
-    r"mắc\s+(?:bệnh\s+)?",
-    r"bị\s+(?:bệnh\s+)?",
 ]
 
 # English disease patterns
@@ -220,15 +215,12 @@ DISEASE_PATTERN = re.compile(
 
 # Diagnostic context markers
 DIAGNOSTIC_MARKERS = [
-    r"chẩn đoán",
-    r"được chẩn đoán",
-    r"chẩn đoán\s+là",
-    r"mắc\s+bệnh",
-    r"bị\s+bệnh",
+    r"chẩn\s+đoán",
+    r"được\s+chẩn\s+đoán",
+    r"chẩn\s+đoán\s+là",
     r"bệnh\s+chính",
     r"bệnh\t+hiểu",
     r"primary\s+diagnosis",
-    r"diagnosis",
 ]
 
 DIAGNOSTIC_PATTERN = re.compile(

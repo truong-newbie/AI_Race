@@ -1,0 +1,298 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      39,
+      52
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      54,
+      68
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Suy tim",
+    "position": [
+      114,
+      121
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      196,
+      213
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "Rosuvastatin",
+    "position": [
+      405,
+      417
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "617312",
+      "52175",
+      "317541",
+      "1191",
+      "1192"
+    ]
+  },
+  {
+    "text": "Carvedilol",
+    "position": [
+      473,
+      483
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "8640",
+      "161",
+      "7646",
+      "1191",
+      "1192"
+    ]
+  },
+  {
+    "text": "tăng kali máu",
+    "position": [
+      590,
+      603
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đường huyết",
+    "position": [
+      850,
+      861
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đường máu",
+    "position": [
+      898,
+      907
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "glucose",
+    "position": [
+      911,
+      918
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "carvedilol",
+    "position": [
+      1061,
+      1071
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "8640",
+      "161",
+      "7646",
+      "1191",
+      "1192"
+    ]
+  },
+  {
+    "text": "carvedilol",
+    "position": [
+      1123,
+      1133
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "8640",
+      "161",
+      "7646",
+      "1191",
+      "1192"
+    ]
+  },
+  {
+    "text": "6.3",
+    "position": [
+      1361,
+      1364
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1392,
+      1393
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "8\n",
+    "position": [
+      1395,
+      1397
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bun",
+    "position": [
+      1404,
+      1407
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "83\n",
+    "position": [
+      1409,
+      1412
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "5.7\n",
+    "position": [
+      1425,
+      1429
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "7.8\n",
+    "position": [
+      1442,
+      1446
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "1",
+    "position": [
+      1451,
+      1452
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "6.5\n",
+    "position": [
+      1454,
+      1458
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bnp",
+    "position": [
+      1460,
+      1463
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "21,000\n",
+    "position": [
+      1464,
+      1471
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng kali máu",
+    "position": [
+      1704,
+      1717
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "iv lasix 40 mg",
+    "position": [
+      1720,
+      1734
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "197361",
+      "52175",
+      "7646",
+      "617312",
+      "2556"
+    ]
+  }
+]

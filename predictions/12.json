@@ -1,0 +1,84 @@
+[
+  {
+    "text": "Đau bụng",
+    "position": [
+      685,
+      693
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phế quản",
+    "position": [
+      901,
+      914
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      918,
+      927
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "3",
+    "position": [
+      984,
+      985
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "công thức máu",
+    "position": [
+      1035,
+      1048
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "11.3\n    ",
+    "position": [
+      1068,
+      1077
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm phổi",
+    "position": [
+      1139,
+      1148
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "J18.9",
+      "J44.9",
+      "K29.9",
+      "J06.9",
+      "J20.9"
+    ]
+  }
+]

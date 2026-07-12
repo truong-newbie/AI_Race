@@ -1,0 +1,52 @@
+[
+  {
+    "text": "khối u",
+    "position": [
+      130,
+      136
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      700,
+      711
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "điều trị bằng flagy",
+    "position": [
+      728,
+      747
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "1191",
+      "1192",
+      "6809",
+      "860975",
+      "861007"
+    ]
+  },
+  {
+    "text": " Catheter",
+    "position": [
+      1269,
+      1278
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

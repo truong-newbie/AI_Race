@@ -1,0 +1,138 @@
+[
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      57,
+      71
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      85,
+      98
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu",
+    "position": [
+      261,
+      268
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "azithromycin",
+    "position": [
+      795,
+      807
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "18631",
+      "1191",
+      "1192",
+      "2556",
+      "860975"
+    ]
+  },
+  {
+    "text": "2.2\n    ",
+    "position": [
+      1094,
+      1102
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "40",
+    "position": [
+      1136,
+      1138
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1145,
+      1146
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "40",
+    "position": [
+      1158,
+      1160
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "k",
+    "position": [
+      1167,
+      1168
+    ],
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hạ kali máu",
+    "position": [
+      1203,
+      1214
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I21.9",
+      "K25.9",
+      "I64",
+      "K26.9",
+      "N18.3"
+    ]
+  },
+  {
+    "text": "nhiễm trùng",
+    "position": [
+      1262,
+      1273
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "J06.9",
+      "N39.0",
+      "A09",
+      "B34.9",
+      "E05.90"
+    ]
+  }
+]

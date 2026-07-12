@@ -1,0 +1,35 @@
+{
+  "total_entities": 6,
+  "total_historical": 4,
+  "drugs_total": 5,
+  "drugs_historical": 3,
+  "drug_entities": [
+    {
+      "text": "Thuốc trước khi n",
+      "assertions": []
+    },
+    {
+      "text": "metoprolol 25mg",
+      "assertions": [
+        "isHistorical"
+      ]
+    },
+    {
+      "text": "atenolol",
+      "assertions": [
+        "isHistorical"
+      ]
+    },
+    {
+      "text": "metoprolol 25mg",
+      "assertions": []
+    },
+    {
+      "text": "aspirin 325mg",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ]
+    }
+  ]
+}

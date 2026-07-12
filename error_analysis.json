@@ -1,0 +1,265 @@
+{
+  "total_historical": 241,
+  "total_negated": 154,
+  "total_family": 15,
+  "hist_samples": [
+    {
+      "file": "70.json",
+      "entity": "cao acetaminophen 500mg",
+      "assertions": [
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "17.json",
+      "entity": "nhiễm trùng",
+      "assertions": [
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "11.json",
+      "entity": "ung thư",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "73.json",
+      "entity": "aspirin 81mg",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "35.json",
+      "entity": "Đái tháo đường",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "33.json",
+      "entity": "oxy",
+      "assertions": [
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "32.json",
+      "entity": "Đái tháo đường",
+      "assertions": [
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "2.json",
+      "entity": "xơ gan",
+      "assertions": [
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "73.json",
+      "entity": "Thuốc trước khi n",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    },
+    {
+      "file": "17.json",
+      "entity": "đau cơ",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ],
+      "icd": null,
+      "rxnorm": null
+    }
+  ],
+  "neg_samples": [
+    {
+      "file": "84.json",
+      "entity": "viêm phổi",
+      "assertions": [
+        "isNegated"
+      ]
+    },
+    {
+      "file": "17.json",
+      "entity": "viêm mô tế bào",
+      "assertions": [
+        "isNegated"
+      ]
+    },
+    {
+      "file": "96.json",
+      "entity": "nhiễm trùng",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "70.json",
+      "entity": "cao acetaminophen 500mg",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ]
+    },
+    {
+      "file": "11.json",
+      "entity": "xơ gan",
+      "assertions": [
+        "isNegated",
+        "isHistorical"
+      ]
+    }
+  ],
+  "fam_samples": [
+    {
+      "file": "40.json",
+      "entity": "đau ngực",
+      "assertions": [
+        "isNegated",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "40.json",
+      "entity": "oxy",
+      "assertions": [
+        "isNegated",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "40.json",
+      "entity": "azithromycin",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "40.json",
+      "entity": "điều trị bằng tylenol ",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "40.json",
+      "entity": "oxy",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "47.json",
+      "entity": "ống thông",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "77.json",
+      "entity": "Rối loạn cảm xúc",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "77.json",
+      "entity": "Rối loạn lưỡng cực",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "77.json",
+      "entity": "rối loạn lo âu",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "77.json",
+      "entity": "điều trị trước khi n",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "82.json",
+      "entity": "chạy thận",
+      "assertions": [
+        "isNegated",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "84.json",
+      "entity": "nhiễm trùng",
+      "assertions": [
+        "isFamily"
+      ]
+    },
+    {
+      "file": "96.json",
+      "entity": "ống thông",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "96.json",
+      "entity": "nhiễm trùng",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    },
+    {
+      "file": "96.json",
+      "entity": "viêm tủy",
+      "assertions": [
+        "isNegated",
+        "isHistorical",
+        "isFamily"
+      ]
+    }
+  ]
+}

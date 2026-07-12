@@ -1,0 +1,154 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      80,
+      93
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường",
+    "position": [
+      96,
+      110
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "suy hô hấp",
+    "position": [
+      700,
+      710
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "position": [
+      715,
+      728
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn",
+    "position": [
+      991,
+      1002
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "A09",
+      "B34.9",
+      "J06.9",
+      "E05.90",
+      "N39.0"
+    ]
+  },
+  {
+    "text": "thuyên tắc",
+    "position": [
+      1226,
+      1236
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "2 ",
+    "position": [
+      1475,
+      1477
+    ],
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "furosemide 40 mg",
+    "position": [
+      1502,
+      1518
+    ],
+    "type": "THUỐC",
+    "assertions": [],
+    "candidates": [
+      "197361",
+      "83367",
+      "7646",
+      "861007",
+      "52175"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      2060,
+      2068
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhiễm khuẩn",
+    "position": [
+      2114,
+      2125
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "A09",
+      "B34.9",
+      "J06.9",
+      "E05.90",
+      "N39.0"
+    ]
+  },
+  {
+    "text": " catheter",
+    "position": [
+      2183,
+      2192
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I25.10",
+      "I64",
+      "I10",
+      "A09",
+      "J45.9"
+    ]
+  },
+  {
+    "text": "thuyên tắc",
+    "position": [
+      2309,
+      2319
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  }
+]

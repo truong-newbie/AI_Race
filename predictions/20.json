@@ -1,0 +1,177 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "position": [
+      48,
+      61
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      121,
+      137
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "position": [
+      142,
+      157
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      322,
+      339
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "position": [
+      354,
+      364
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "314076",
+      "1116635",
+      "7646",
+      "6809",
+      "860975"
+    ]
+  },
+  {
+    "text": "reduced from 50mg",
+    "position": [
+      366,
+      383
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ],
+    "candidates": [
+      "83367",
+      "6809",
+      "8640",
+      "161",
+      "72407"
+    ]
+  },
+  {
+    "text": "thuốc cản quang ch",
+    "position": [
+      1545,
+      1563
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "316672",
+      "855332",
+      "161",
+      "617312",
+      "52175"
+    ]
+  },
+  {
+    "text": "thuốc cản quan",
+    "position": [
+      2080,
+      2094
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161",
+      "1191",
+      "1192",
+      "18631",
+      "72509"
+    ]
+  },
+  {
+    "text": "thuốc cản quan",
+    "position": [
+      2630,
+      2644
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161",
+      "1191",
+      "1192",
+      "18631",
+      "72509"
+    ]
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "position": [
+      2847,
+      2862
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I21.9",
+      "I25.10",
+      "I64",
+      "I50.9",
+      "K25.9"
+    ]
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "position": [
+      2941,
+      2956
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  }
+]

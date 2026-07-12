@@ -27,15 +27,47 @@ from src.assertion.cues import (
 )
 
 
-# Section patterns that imply historical context
+# Section patterns that imply historical context.
+# The "tiền sử bệnh" pattern uses a negative lookbehind (?<![a-z...])
+# to ONLY match when NOT preceded by a letter — this distinguishes:
+#   - "Tiền sử bệnh\n    Thuốc" (no preceding letter) → MATCHES → historical section
+#   - "có tiền sử bệnh tim"  (letter "ó" before "tiền") → NO match → NOT historical
 HISTORICAL_SECTION_PATTERNS = [
-    r"tiền\s+sử\b",
-    r"quá\s+khứ\b",
-    r"bệnh\s+sử\b",
     r"tiền\s+sử\s+bệnh\b",
+    r"quá\s+khứ\b",
+    r"tiền\s+sử\b",
+    r"bệnh\s+sử\b",
     r"past\s+history\b",
     r"history\b",
 ]
+
+# Section header patterns that act as sentence boundaries in Vietnamese medical text.
+# These numbered/bulleted section headings break the scope of prior sections so that
+# a "Tiền sử" section header does NOT bleed historical marking into the next section's
+# bullet points (e.g., drugs listed under "Thuốc đang dùng").
+# Matches patterns like "1. ", "2. ", "3. " at the start of a line or after a newline.
+SECTION_HEADER_PATTERN = re.compile(
+    r'^[ \t]*\d+[\.\)][ \t]+',
+    re.MULTILINE
+)
+
+# Section header cues: "Tiền sử bệnh hiện tại" / "1. Tiền sử..." at the START of a
+# sentence should NOT trigger historical marking for the rest of that sentence.
+# Only mid-sentence historical cues like "BN có tiền sử bệnh tiểu đường" should.
+# Matches:
+#   - "1.  Tiền sử..."     (numbered section header, any variant)
+#   - "- Tiền sử bệnh hiện tại"  (bulleted section header, WITH "hiện tại")
+#   - "Tiền sử bệnh\n" or "Tiền sử bệnh hiện tại"  (plain header at start of sentence)
+#     The (?=\s) lookahead requires whitespace after "bệnh":
+#     - "Tiền sử bệnh\n" → whitespace → MATCHES → excluded (correct!)
+#     - "Tiền sử bệnh hiện tại" → space → MATCHES → excluded (correct!)
+#     - "Tiền sử bệnh tiểu đường" → letter 't' → NO match → NOT excluded (correct!)
+SECTION_HEADER_HISTORICAL_PATTERN = re.compile(
+    r'^[ \t]*\d+[\.\)][ \t]+tiền\s+sử\b|'
+    r'^[ \t]*-*[ \t]*tiền\s+sử\s+bệnh\s+hiện\s+tại\b|'
+    r'^tiền\s+sử\s+bệnh\s+(?=\s)(?!\S)',
+    re.IGNORECASE | re.MULTILINE | re.DOTALL
+)
 
 
 @dataclass
@@ -77,6 +109,11 @@ class ClauseSegmenter:
         """
         Segment text into sentences.
 
+        In Vietnamese medical records, sections are separated by numbered/bulleted
+        headers (e.g. "1. Tiền sử bệnh hiện tại"). These headers act as sentence
+        boundaries so that a "Tiền sử" section does not bleed isHistorical marking
+        into subsequent section bullet points.
+
         Args:
             text: Input text
 
@@ -86,9 +123,19 @@ class ClauseSegmenter:
         sentences = []
         start = 0
 
-        # Find all sentence boundaries
+        # Collect all boundary positions: standard delimiters + section headers
+        boundary_positions: list[int] = []
         for match in self.delimiter_pattern.finditer(text):
-            end = match.end()
+            boundary_positions.append(match.end())
+        for match in SECTION_HEADER_PATTERN.finditer(text):
+            boundary_positions.append(match.start())
+
+        # Sort and deduplicate
+        boundary_positions = sorted(set(boundary_positions))
+
+        for end in boundary_positions:
+            if end <= start:
+                continue
             sentence_text = text[start:end]
             # Strip leading/trailing whitespace and punctuation for clean sentence text
             sentence_text = sentence_text.strip(' \t\n')
@@ -109,7 +156,7 @@ class ClauseSegmenter:
                 has_historical_section=has_hist
             ))
 
-            start = match.end()
+            start = end
 
         # Handle remaining text (no trailing delimiter)
         if start < len(text):
@@ -127,11 +174,42 @@ class ClauseSegmenter:
         return sentences
 
     def _is_historical_section(self, text: str) -> bool:
-        """Check if text is part of a historical section."""
+        """
+        Check if text is part of a historical section.
+
+        Section headers like "1. Tiền sử bệnh hiện tại" are excluded —
+        they are document structure, not historical assertions.
+
+        The DOTALL flag is used so that \s (whitespace) matches newlines,
+        because the section title may span across lines in the raw text.
+        """
         text_lower = text.lower()
+        stripped_lower = text_lower.lstrip()
+
+        # Check HISTORICAL_SECTION_PATTERNS first. A sentence is a historical section
+        # ONLY if the historical cue appears at the start of the sentence (position 0
+        # in stripped_lower) or immediately after a newline. This distinguishes:
+        #   - "Tiền sử bệnh\n..." (section header, start of sentence) → is historical
+        #   - "Tiền sử bệnh\n    Thuốc" → start-of-sentence header → section-header exclusion
+        #     applies → NOT historical
+        #   - "Bố có tiền sử bệnh tim." (mid-sentence cue at pos 6) → NOT historical
+        # After the HISTORICAL_SECTION_PATTERNS check, re-exclude section headers
+        # (like "Tiền sử bệnh\n" which is document structure, not patient history).
         for pattern in HISTORICAL_SECTION_PATTERNS:
-            if re.search(pattern, text_lower):
-                return True
+            m = re.search(pattern, stripped_lower, re.DOTALL)
+            if m:
+                # Only treat as historical section if cue is at sentence start or
+                # immediately after a newline (multi-line section title).
+                at_sentence_start = (m.start() == 0)
+                after_newline = (m.start() > 0 and stripped_lower[m.start() - 1] == '\n')
+                if not (at_sentence_start or after_newline):
+                    continue  # mid-sentence cue → not a historical section
+                # At sentence start: check if it's a section header to exclude
+                header_m = SECTION_HEADER_HISTORICAL_PATTERN.search(stripped_lower)
+                if header_m:
+                    return False  # section header → not historical
+                return True  # historical section cue at start of sentence
+
         return False
 
     def _segment_clauses(self, sentence_text: str, sentence_start: int) -> List[ClauseBoundary]:
@@ -333,6 +411,14 @@ def _is_cue_in_scope(
             if cue.end <= conj_pos < entity_start:
                 return False
 
+    # Historical section rule: cues in a historical section sentence are in scope,
+    # cues in a non-historical sentence are out of scope (except for section headers,
+    # which already return has_historical_section=False from _is_historical_section).
+    if cue.cue_type == CueType.HISTORICAL:
+        if sentence_scope.has_historical_section:
+            return True  # in historical section → cue in scope
+        return False  # not in historical section → historical cue out of scope
+
     return False
 
 
@@ -403,10 +489,6 @@ def apply_scope_rules(
 
     if sentence_scope is None:
         return result
-
-    # Rule 7: Historical section applies to all entities
-    if sentence_scope.has_historical_section:
-        result["is_historical"] = True
 
     # Get clause containing entity
     clause_scope = clause_segmenter.get_entity_clause(entity_start, entity_end, sentence_scope.clauses)

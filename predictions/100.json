@@ -1,0 +1,104 @@
+[
+  {
+    "text": "Xơ vữa động mạch",
+    "position": [
+      181,
+      197
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cơn đau thắt ngực",
+    "position": [
+      204,
+      221
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      673,
+      681
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "động kinh",
+    "position": [
+      741,
+      750
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhồi máu",
+    "position": [
+      796,
+      804
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "position": [
+      895,
+      903
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhồi máu",
+    "position": [
+      1341,
+      1349
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "I64",
+      "K25.9",
+      "K26.9",
+      "J06.9"
+    ]
+  },
+  {
+    "text": "Laxis 20mg",
+    "position": [
+      1441,
+      1451
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "7646",
+      "617312",
+      "72407",
+      "72509",
+      "52175"
+    ]
+  }
+]

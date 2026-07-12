@@ -1,0 +1,100 @@
+[
+  {
+    "text": "đặt nội khí quản",
+    "position": [
+      73,
+      89
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Rối loạn cảm xúc",
+    "position": [
+      195,
+      211
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Rối loạn lưỡng cực",
+    "position": [
+      219,
+      237
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "rối loạn lo âu",
+    "position": [
+      244,
+      258
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "điều trị trước khi n",
+    "position": [
+      272,
+      292
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "855332",
+      "617312",
+      "1191"
+    ]
+  },
+  {
+    "text": "trầm cảm",
+    "position": [
+      726,
+      734
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "lo âu",
+    "position": [
+      1100,
+      1105
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "oxy",
+    "position": [
+      1152,
+      1155
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  }
+]

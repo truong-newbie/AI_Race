@@ -1,0 +1,42 @@
+[
+  {
+    "text": "xơ vữa động mạch",
+    "position": [
+      148,
+      164
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Cơn đau thắt ngực",
+    "position": [
+      1048,
+      1065
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Cơn đau thắt ngực",
+    "position": [
+      1174,
+      1191
+    ],
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "I25.10",
+      "M79.3",
+      "K25.9",
+      "M54.5"
+    ]
+  }
+]

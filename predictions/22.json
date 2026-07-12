@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Thuốc trước khi n",
+    "position": [
+      48,
+      65
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "18631",
+      "83367",
+      "161",
+      "72509",
+      "8640"
+    ]
+  },
+  {
+    "text": "aspirin 325mg",
+    "position": [
+      75,
+      88
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1192",
+      "1191",
+      "198211",
+      "18631",
+      "32937"
+    ]
+  },
+  {
+    "text": "loạn thần",
+    "position": [
+      181,
+      190
+    ],
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "thuốc cản quang ",
+    "position": [
+      245,
+      261
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161",
+      "18631",
+      "72509",
+      "316672",
+      "52175"
+    ]
+  },
+  {
+    "text": "thuốc cản quan",
+    "position": [
+      363,
+      377
+    ],
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161",
+      "1191",
+      "1192",
+      "18631",
+      "72509"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "Section 1 header (newline after bệnh)": {
+    "text": "'Tiền sử bệnh\\n    Thuốc trước khi'",
+    "matched": true,
+    "match": "'tiền sử bệnh\\n   '",
+    "match_pos": [
+      0,
+      16
+    ]
+  },
+  "Section 2 header (space after bệnh)": {
+    "text": "'Tiền sử bệnh hiện tại\\n    Lý do'",
+    "matched": true,
+    "match": "'tiền sử bệnh hiện tại'",
+    "match_pos": [
+      0,
+      21
+    ]
+  },
+  "Body text with tiền sử": {
+    "text": "'Bố có tiền sử bệnh tim.'",
+    "matched": false,
+    "match": null,
+    "match_pos": null
+  },
+  "Body: tiền sử bệnh followed by letter": {
+    "text": "'Tiền sử bệnh tiểu đường'",
+    "matched": false,
+    "match": null,
+    "match_pos": null
+  },
+  "With number prefix": {
+    "text": "'1.  Tiền sử bệnh'",
+    "matched": true,
+    "match": "'1.  tiền sử'",
+    "match_pos": [
+      0,
+      11
+    ]
+  },
+  "With trailing space": {
+    "text": "'Tiền sử bệnh '",
+    "matched": false,
+    "match": null,
+    "match_pos": null
+  },
+  "With trailing newline": {
+    "text": "'Tiền sử bệnh\\n'",
+    "matched": false,
+    "match": null,
+    "match_pos": null
+  },
+  "alt3_only_Section 1 header (ne": {
+    "matched": true,
+    "match": "'tiền sử bệnh\\n   '"
+  },
+  "alt3_only_Section 2 header (sp": {
+    "matched": false,
+    "match": null
+  },
+  "alt3_only_Body text with tiền ": {
+    "matched": false,
+    "match": null
+  },
+  "alt3_only_Body: tiền sử bệnh f": {
+    "matched": false,
+    "match": null
+  },
+  "char_after_benh": {
+    "pos_12": "'\\n  '",
+    "ord_12": 10,
+    "is_space_12": true,
+    "is_S_12": false
+  },
+  "logic_check": {
+    "newline_is_space": true,
+    "newline_not_S": false,
+    "should_match": false
+  }
+}
