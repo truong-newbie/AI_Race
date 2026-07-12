@@ -62,3 +62,18 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Colab / notebook checkpoints
+*.ipynb
+
+# Embedding caches (generated at runtime)
+.cache/
+!.cache/.gitkeep
+
+# Model checkpoints
+checkpoints/
+!.checkpoints/.gitkeep
+
+# Google Drive sync (if any)
+drive/
+
