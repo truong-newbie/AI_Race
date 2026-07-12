@@ -19,17 +19,24 @@ logger = logging.getLogger(__name__)
 # Vietnamese disease-related keywords
 VIETNAMESE_DISEASE_KEYWORDS = [
     # Disease terms (order matters - more specific first)
+    r"viêm phổi cộng đồng",
+    r"viêm phổi mắc phải",
     r"viêm phổi",
     r"viêm phế quản",
     r"viêm dạ dày",
+    r"viêm gan B",
+    r"viêm gan C",
+    r"viêm gan virus",
     r"viêm gan",
     r"viêm ruột",
+    r"viêm mũi dị ứng",
     r"viêm mũi",
     r"viêm họng",
     r"viêm màng não",
     r"viêm amidan",
     r"viêm xoang",
     r"viêm túi mật",
+    r"viêm khớp dạng thấp",
     r"viêm khớp",
     r"viêm thần kinh",
     r"viêm cơ tim",
@@ -41,6 +48,7 @@ VIETNAMESE_DISEASE_KEYWORDS = [
     r"viêm ống cổ tử cung",
     r"viêm phần phụ",
     r"viêm tử cung",
+    r"viêm bàng quang",
     r"viêm da cơ địa",
     r"viêm da dị ứng",
     r"viêm da tiếp xúc",
@@ -50,10 +58,15 @@ VIETNAMESE_DISEASE_KEYWORDS = [
     r"viêm mô tế bào",
 
     # Common conditions
+    r"trào ngược dạ dày thực quản",
     r"trào ngược dạ dày",
     r"trào ngược",
+    r"đái tháo đường type 2",
+    r"đái tháo đường type 1",
     r"đái tháo đường",
     r"tiểu đường",
+    r"tăng huyết áp nguyên phát",
+    r"tăng huyết áp thứ phát",
     r"tăng huyết áp",
     r"cao huyết áp",
     r"huyết áp cao",
@@ -120,6 +133,8 @@ VIETNAMESE_DISEASE_KEYWORDS = [
     r"u lành tính",
     r"u ác tính",
     r"polyp",
+    r"nhiễm trùng huyết",
+    r"nhiễm trùng tiết niệu",
     r"nhiễm trùng",
     r"nhiễm nấm",
     r"nhiễm khuẩn",
@@ -303,6 +318,30 @@ class DiseaseExtractor:
         if self.diagnostic_pattern.search(before_text):
             return "CHẨN_ĐOÁN"
 
+        # Default based on pattern type - known diseases are diagnoses.
+        # This must be checked BEFORE symptom_context to prevent "hen" in "hen suyễn"
+        # from triggering TRIỆU_CHỨNG.
+        match_text = text[start:end].lower()
+        diagnosis_patterns = [
+            "viêm phổi", "viêm phổi cộng đồng", "viêm phổi mắc phải",
+            "viêm phế quản", "viêm gan", "viêm gan B", "viêm gan C",
+            "viêm dạ dày", "viêm màng não", "viêm khớp", "viêm bàng quang",
+            "đái tháo đường", "đái tháo đường type", "tiểu đường",
+            "tăng huyết áp", "cao huyết áp", "huyết áp cao",
+            "trào ngược", "trào ngược dạ dày",
+            "hen suyễn", "hen phế quản", "hen",
+            "nhồi máu", "nhồi máu cơ tim",
+            "tai biến", "tai biến mạch máu não",
+            "đột quỵ", "xuất huyết não",
+            "suy tim", "suy thận", "suy gan",
+            "nhiễm trùng", "nhiễm trùng tiết niệu", "nhiễm trùng huyết",
+            "xơ gan", "xơ vữa động mạch",
+            "đau thượng vị",
+        ]
+        for pattern in diagnosis_patterns:
+            if pattern in match_text:
+                return "CHẨN_ĐOÁN"
+
         # Check for symptom markers - if found, it's a symptom
         symptom_markers = [
             "triệu chứng", "biểu hiện", "phàn nàn", "thấy", "kêu"
@@ -323,15 +362,6 @@ class DiseaseExtractor:
         # Check for negative markers (loại trừ, không) - suggests it's a diagnosis being ruled out
         if "loại trừ" in before_text or "không" in before_text:
             return "CHẨN_ĐOÁN"
-
-        # Default based on pattern type - specific diseases are likely diagnoses
-        match_text = text[start:end].lower()
-        diagnosis_patterns = ["viêm phổi", "viêm phế quản", "viêm gan", "viêm dạ dày",
-                              "đái tháo đường", "tăng huyết áp", "trào ngược", "hen suyễn",
-                              "nhồi máu", "tai biến"]
-        for pattern in diagnosis_patterns:
-            if pattern in match_text:
-                return "CHẨN_ĐOÁN"
 
         # Default to symptom if still unclear
         return "TRIỆU_CHỨNG"

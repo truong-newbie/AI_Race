@@ -427,8 +427,12 @@ class MedicalOntologyPipeline:
                 if m.confidence < threshold:
                     continue
 
+                # Use context from _determine_context, not just is_diagnosed.
+                # is_diagnosed only looks for explicit diagnostic markers (e.g. "chẩn đoán"),
+                # while _determine_context also considers pattern-based classification
+                # (e.g. known diseases like "hen suyễn" → CHẨN_ĐOÁN).
                 entity_type = (
-                    "CHAN_DOAN" if m.is_diagnosed
+                    "CHAN_DOAN" if m.context == "CHẨN_ĐOÁN"
                     else "TRIEU_CHUNG"
                 )
                 spans.append(create_span(
